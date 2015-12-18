@@ -1,0 +1,32 @@
+//
+//  CintinGlobalData.h
+//  iBeaGuide
+//
+//  Created by din1030 on 2015/12/13.
+//  Copyright © 2015年 Cheng Chia Ting. All rights reserved.
+//
+
+#import <Foundation/Foundation.h>
+#import <AVFoundation/AVAudioPlayer.h>
+#import "CintinGlobalData.h"
+
+@interface CintinGlobalData : NSObject <AVAudioPlayerDelegate>
+
+@property AVAudioPlayer *BGM;
+@property AVAudioPlayer *trackA;
+@property AVAudioPlayer *trackB;
+@property AVAudioPlayer *trackC;
+@property AVAudioPlayer *trackD;
+@property AVAudioPlayer *trackE;
+@property AVAudioPlayer *trackF;
+@property AVAudioPlayer *trackG;
+@property AVAudioPlayer *trackH;
+
++ (CintinGlobalData *)sharedInstance;
+- (void)playAudio:(AVAudioPlayer *)player setVolume:(float)volume;
+- (void)stopAudio:(AVAudioPlayer *)player;
+- (void)pauseAudio:(AVAudioPlayer *)player;
+
+@end
+
+
