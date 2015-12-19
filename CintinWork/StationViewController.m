@@ -1,20 +1,20 @@
 //
-//  streetViewController.m
+//  StationViewController.m
 //  CintinWork
 //
 //  Created by din1030 on 2015/12/19.
 //  Copyright © 2015年 Cheng Chia Ting. All rights reserved.
 //
 
-#import "streetViewController.h"
+#import "StationViewController.h"
 
-@interface streetViewController ()
+@interface StationViewController ()
 @property (strong, nonatomic) IBOutlet UIImageView *bgAnimation;
 @property (strong, nonatomic) IBOutlet UIButton *OLBtn;
 
 @end
 
-@implementation streetViewController
+@implementation StationViewController
 
 - (void)viewDidLoad {
     [super viewDidLoad];

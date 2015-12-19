@@ -28,6 +28,7 @@
         _trackA = [self setPlayer:_trackA pathForResource:@"A" ofType:@"mp3"];
         _trackB = [self setPlayer:_trackB pathForResource:@"B" ofType:@"mp3"];
         _trackC = [self setPlayer:_trackC pathForResource:@"C" ofType:@"mp3"];
+        _parkSceneState = initialState;
     }
 	
 	return self;

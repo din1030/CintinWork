@@ -56,8 +56,9 @@
                         _imageView.image = imageArr[i];
                     }
                     completion:^(BOOL finished){
-                        [self performSegueWithIdentifier:@"to_1_5" sender:self];
-                        return;
+//                        [self performSegueWithIdentifier:@"to_1_5" sender:self];
+//                        return;
+//#warning shortcut to 1-5
                         // 還有下一張圖
                         if (i < [imageArr count] - 1) {
                             [self fadeInOutImage:imageArr index:(i+1)];

@@ -12,8 +12,8 @@
 		A6CC8EB11C24008200D9E9B1 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = A6CC8EAF1C24008200D9E9B1 /* Main.storyboard */; };
 		A6CC8EB31C24008200D9E9B1 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A6CC8EB21C24008200D9E9B1 /* Assets.xcassets */; };
 		A6CC8F161C24050800D9E9B1 /* OpenningViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CC8F151C24050800D9E9B1 /* OpenningViewController.m */; };
-		A6CC8F1D1C2446BD00D9E9B1 /* parkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CC8F1C1C2446BD00D9E9B1 /* parkViewController.m */; };
-		A6CC8F231C24527700D9E9B1 /* characterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CC8F221C24527700D9E9B1 /* characterViewController.m */; };
+		A6CC8F1D1C2446BD00D9E9B1 /* ParkViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CC8F1C1C2446BD00D9E9B1 /* ParkViewController.m */; };
+		A6CC8F231C24527700D9E9B1 /* CharacterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CC8F221C24527700D9E9B1 /* CharacterViewController.m */; };
 		A6CFE9161C2475ED00623DBB /* 1-1@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE8ED1C2475EC00623DBB /* 1-1@2x.png */; };
 		A6CFE9171C2475ED00623DBB /* 1-2@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE8EE1C2475EC00623DBB /* 1-2@2x.png */; };
 		A6CFE9181C2475ED00623DBB /* 1-3@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE8EF1C2475EC00623DBB /* 1-3@2x.png */; };
@@ -55,7 +55,7 @@
 		A6CFE94B1C24761500623DBB /* window@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE9431C24761500623DBB /* window@2x.png */; };
 		A6CFE94E1C247A0400623DBB /* One5ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CFE94D1C247A0400623DBB /* One5ViewController.m */; };
 		A6CFE9501C247C8200623DBB /* 2-1_bg@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE94F1C247C8200623DBB /* 2-1_bg@2x.png */; };
-		A6CFE9531C2493B000623DBB /* streetViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CFE9521C2493B000623DBB /* streetViewController.m */; };
+		A6CFE9531C2493B000623DBB /* StationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CFE9521C2493B000623DBB /* StationViewController.m */; };
 		A6CFE9611C24997D00623DBB /* A.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE9561C24997D00623DBB /* A.mp3 */; };
 		A6CFE9621C24997D00623DBB /* 劇本作家.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE9571C24997D00623DBB /* 劇本作家.mp3 */; };
 		A6CFE9631C24997D00623DBB /* 咖啡店老闆.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE9581C24997D00623DBB /* 咖啡店老闆.mp3 */; };
@@ -70,6 +70,8 @@
 		A6CFE96F1C249D9700623DBB /* CintinGlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CFE96E1C249D9700623DBB /* CintinGlobalData.m */; };
 		A6CFE9711C24A58C00623DBB /* AudioToolbox.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CFE9701C24A58C00623DBB /* AudioToolbox.framework */; };
 		A6CFE9731C24A59200623DBB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CFE9721C24A59200623DBB /* AVFoundation.framework */; };
+		A6DAB5D41C257320001CD22A /* GeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAB5D31C257320001CD22A /* GeneralViewController.m */; };
+		A6DAB5D71C25765F001CD22A /* CafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAB5D61C25765F001CD22A /* CafeViewController.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -82,10 +84,10 @@
 		A6CC8EB71C24008200D9E9B1 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		A6CC8F141C24050800D9E9B1 /* OpenningViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = OpenningViewController.h; sourceTree = "<group>"; };
 		A6CC8F151C24050800D9E9B1 /* OpenningViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = OpenningViewController.m; sourceTree = "<group>"; };
-		A6CC8F1B1C2446BD00D9E9B1 /* parkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = parkViewController.h; sourceTree = "<group>"; };
-		A6CC8F1C1C2446BD00D9E9B1 /* parkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = parkViewController.m; sourceTree = "<group>"; };
-		A6CC8F211C24527700D9E9B1 /* characterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = characterViewController.h; sourceTree = "<group>"; };
-		A6CC8F221C24527700D9E9B1 /* characterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = characterViewController.m; sourceTree = "<group>"; };
+		A6CC8F1B1C2446BD00D9E9B1 /* ParkViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ParkViewController.h; sourceTree = "<group>"; };
+		A6CC8F1C1C2446BD00D9E9B1 /* ParkViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ParkViewController.m; sourceTree = "<group>"; };
+		A6CC8F211C24527700D9E9B1 /* CharacterViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CharacterViewController.h; sourceTree = "<group>"; };
+		A6CC8F221C24527700D9E9B1 /* CharacterViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CharacterViewController.m; sourceTree = "<group>"; };
 		A6CFE8ED1C2475EC00623DBB /* 1-1@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-1@2x.png"; sourceTree = "<group>"; };
 		A6CFE8EE1C2475EC00623DBB /* 1-2@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-2@2x.png"; sourceTree = "<group>"; };
 		A6CFE8EF1C2475EC00623DBB /* 1-3@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "1-3@2x.png"; sourceTree = "<group>"; };
@@ -128,8 +130,8 @@
 		A6CFE94C1C247A0400623DBB /* One5ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = One5ViewController.h; sourceTree = "<group>"; };
 		A6CFE94D1C247A0400623DBB /* One5ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = One5ViewController.m; sourceTree = "<group>"; };
 		A6CFE94F1C247C8200623DBB /* 2-1_bg@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "2-1_bg@2x.png"; sourceTree = "<group>"; };
-		A6CFE9511C2493B000623DBB /* streetViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = streetViewController.h; sourceTree = "<group>"; };
-		A6CFE9521C2493B000623DBB /* streetViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = streetViewController.m; sourceTree = "<group>"; };
+		A6CFE9511C2493B000623DBB /* StationViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = StationViewController.h; sourceTree = "<group>"; };
+		A6CFE9521C2493B000623DBB /* StationViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = StationViewController.m; sourceTree = "<group>"; };
 		A6CFE9561C24997D00623DBB /* A.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = A.mp3; sourceTree = "<group>"; };
 		A6CFE9571C24997D00623DBB /* 劇本作家.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "劇本作家.mp3"; sourceTree = "<group>"; };
 		A6CFE9581C24997D00623DBB /* 咖啡店老闆.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "咖啡店老闆.mp3"; sourceTree = "<group>"; };
@@ -145,6 +147,10 @@
 		A6CFE96E1C249D9700623DBB /* CintinGlobalData.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CintinGlobalData.m; sourceTree = "<group>"; };
 		A6CFE9701C24A58C00623DBB /* AudioToolbox.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AudioToolbox.framework; path = System/Library/Frameworks/AudioToolbox.framework; sourceTree = SDKROOT; };
 		A6CFE9721C24A59200623DBB /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
+		A6DAB5D21C257320001CD22A /* GeneralViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GeneralViewController.h; sourceTree = "<group>"; };
+		A6DAB5D31C257320001CD22A /* GeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralViewController.m; sourceTree = "<group>"; };
+		A6DAB5D51C25765F001CD22A /* CafeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafeViewController.h; sourceTree = "<group>"; };
+		A6DAB5D61C25765F001CD22A /* CafeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafeViewController.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -188,16 +194,20 @@
 				A6CC8EAA1C24008200D9E9B1 /* AppDelegate.m */,
 				A6CFE96D1C249D9700623DBB /* CintinGlobalData.h */,
 				A6CFE96E1C249D9700623DBB /* CintinGlobalData.m */,
-				A6CC8F211C24527700D9E9B1 /* characterViewController.h */,
-				A6CC8F221C24527700D9E9B1 /* characterViewController.m */,
+				A6DAB5D21C257320001CD22A /* GeneralViewController.h */,
+				A6DAB5D31C257320001CD22A /* GeneralViewController.m */,
+				A6CC8F211C24527700D9E9B1 /* CharacterViewController.h */,
+				A6CC8F221C24527700D9E9B1 /* CharacterViewController.m */,
 				A6CC8F141C24050800D9E9B1 /* OpenningViewController.h */,
 				A6CC8F151C24050800D9E9B1 /* OpenningViewController.m */,
 				A6CFE94C1C247A0400623DBB /* One5ViewController.h */,
 				A6CFE94D1C247A0400623DBB /* One5ViewController.m */,
-				A6CC8F1B1C2446BD00D9E9B1 /* parkViewController.h */,
-				A6CC8F1C1C2446BD00D9E9B1 /* parkViewController.m */,
-				A6CFE9511C2493B000623DBB /* streetViewController.h */,
-				A6CFE9521C2493B000623DBB /* streetViewController.m */,
+				A6CC8F1B1C2446BD00D9E9B1 /* ParkViewController.h */,
+				A6CC8F1C1C2446BD00D9E9B1 /* ParkViewController.m */,
+				A6CFE9511C2493B000623DBB /* StationViewController.h */,
+				A6CFE9521C2493B000623DBB /* StationViewController.m */,
+				A6DAB5D51C25765F001CD22A /* CafeViewController.h */,
+				A6DAB5D61C25765F001CD22A /* CafeViewController.m */,
 				A6CC8EB21C24008200D9E9B1 /* Assets.xcassets */,
 				A6CC8EB71C24008200D9E9B1 /* Info.plist */,
 				A6CC8EA61C24008200D9E9B1 /* Supporting Files */,
@@ -448,12 +458,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				A6CC8F161C24050800D9E9B1 /* OpenningViewController.m in Sources */,
-				A6CFE9531C2493B000623DBB /* streetViewController.m in Sources */,
-				A6CC8F231C24527700D9E9B1 /* characterViewController.m in Sources */,
+				A6CFE9531C2493B000623DBB /* StationViewController.m in Sources */,
+				A6CC8F231C24527700D9E9B1 /* CharacterViewController.m in Sources */,
 				A6CC8EAB1C24008200D9E9B1 /* AppDelegate.m in Sources */,
+				A6DAB5D41C257320001CD22A /* GeneralViewController.m in Sources */,
 				A6CFE94E1C247A0400623DBB /* One5ViewController.m in Sources */,
 				A6CC8EA81C24008200D9E9B1 /* main.m in Sources */,
-				A6CC8F1D1C2446BD00D9E9B1 /* parkViewController.m in Sources */,
+				A6DAB5D71C25765F001CD22A /* CafeViewController.m in Sources */,
+				A6CC8F1D1C2446BD00D9E9B1 /* ParkViewController.m in Sources */,
 				A6CFE96F1C249D9700623DBB /* CintinGlobalData.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -62,7 +62,7 @@
 -(void)doVolumeFade {
     if ([[CintinGlobalData sharedInstance].BGM isPlaying] &&[CintinGlobalData sharedInstance].BGM.volume > 0.2f) {
         [CintinGlobalData sharedInstance].BGM.volume -= 0.05f;
-        [self performSelector:@selector(doVolumeFade) withObject:nil afterDelay:0.2];
+        [self performSelector:@selector(doVolumeFade) withObject:nil afterDelay:0.5];
     }
 }
 
