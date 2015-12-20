@@ -40,6 +40,7 @@
     player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
     player.numberOfLoops = -1;
     player.delegate = self;
+    [player prepareToPlay];
     return player;
 }
 

@@ -37,16 +37,23 @@
             _charBG.image = [UIImage imageNamed:@"2-B.png"];
             [[CintinGlobalData sharedInstance].BGM stop];
             [[CintinGlobalData sharedInstance].trackA stop];
-            // track B mp3 file no sound
-            [[CintinGlobalData sharedInstance].trackC play];
+            [[CintinGlobalData sharedInstance].trackB play];
             break;
             
         case 3:
             _charBG.image = [UIImage imageNamed:@"3-C.png"];
+            [[CintinGlobalData sharedInstance].BGM stop];
+            [[CintinGlobalData sharedInstance].trackA stop];
+            [[CintinGlobalData sharedInstance].trackB stop];
+            [[CintinGlobalData sharedInstance].trackC play];
             break;
             
         case 4:
             _charBG.image = [UIImage imageNamed:@"3-D.png"];
+            [[CintinGlobalData sharedInstance].BGM stop];
+            [[CintinGlobalData sharedInstance].trackA stop];
+            [[CintinGlobalData sharedInstance].trackB stop];
+            [[CintinGlobalData sharedInstance].trackD play];
             break;
             
         default:

@@ -75,7 +75,7 @@
     _imageView.image = (_repeat) ? [UIImage imageNamed:@"1-4-long.png"] : [UIImage imageNamed:@"b1-4-long.png"];
     
     [UIView transitionWithView:_imageView
-                      duration:6.0f
+                      duration:9.0f
                        options:UIViewAnimationOptionCurveLinear
                      animations:^{
                          [_imageView setFrame:(CGRect){0, 0, 1024, 2304}];

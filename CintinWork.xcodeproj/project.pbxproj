@@ -64,7 +64,6 @@
 		A6CFE9661C24997D00623DBB /* 滑板少年.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE95B1C24997D00623DBB /* 滑板少年.mp3 */; };
 		A6CFE9671C24997D00623DBB /* 滷味攤阿婆.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE95C1C24997D00623DBB /* 滷味攤阿婆.mp3 */; };
 		A6CFE9681C24997D00623DBB /* 花店老闆.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE95D1C24997D00623DBB /* 花店老闆.mp3 */; };
-		A6CFE9691C24997D00623DBB /* B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE95E1C24997D00623DBB /* B.mp3 */; };
 		A6CFE96A1C24997D00623DBB /* 補習高中生.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE95F1C24997D00623DBB /* 補習高中生.mp3 */; };
 		A6CFE96C1C2499F100623DBB /* openningBGM.wav in Resources */ = {isa = PBXBuildFile; fileRef = A6CFE96B1C2499F100623DBB /* openningBGM.wav */; };
 		A6CFE96F1C249D9700623DBB /* CintinGlobalData.m in Sources */ = {isa = PBXBuildFile; fileRef = A6CFE96E1C249D9700623DBB /* CintinGlobalData.m */; };
@@ -72,6 +71,7 @@
 		A6CFE9731C24A59200623DBB /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A6CFE9721C24A59200623DBB /* AVFoundation.framework */; };
 		A6DAB5D41C257320001CD22A /* GeneralViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAB5D31C257320001CD22A /* GeneralViewController.m */; };
 		A6DAB5D71C25765F001CD22A /* CafeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = A6DAB5D61C25765F001CD22A /* CafeViewController.m */; };
+		A6DAB5D91C25AB2D001CD22A /* B.mp3 in Resources */ = {isa = PBXBuildFile; fileRef = A6DAB5D81C25AB2D001CD22A /* B.mp3 */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -140,7 +140,6 @@
 		A6CFE95B1C24997D00623DBB /* 滑板少年.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "滑板少年.mp3"; sourceTree = "<group>"; };
 		A6CFE95C1C24997D00623DBB /* 滷味攤阿婆.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "滷味攤阿婆.mp3"; sourceTree = "<group>"; };
 		A6CFE95D1C24997D00623DBB /* 花店老闆.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "花店老闆.mp3"; sourceTree = "<group>"; };
-		A6CFE95E1C24997D00623DBB /* B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = B.mp3; sourceTree = "<group>"; };
 		A6CFE95F1C24997D00623DBB /* 補習高中生.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = "補習高中生.mp3"; sourceTree = "<group>"; };
 		A6CFE96B1C2499F100623DBB /* openningBGM.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; path = openningBGM.wav; sourceTree = "<group>"; };
 		A6CFE96D1C249D9700623DBB /* CintinGlobalData.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CintinGlobalData.h; sourceTree = "<group>"; };
@@ -151,6 +150,7 @@
 		A6DAB5D31C257320001CD22A /* GeneralViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GeneralViewController.m; sourceTree = "<group>"; };
 		A6DAB5D51C25765F001CD22A /* CafeViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CafeViewController.h; sourceTree = "<group>"; };
 		A6DAB5D61C25765F001CD22A /* CafeViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = CafeViewController.m; sourceTree = "<group>"; };
+		A6DAB5D81C25AB2D001CD22A /* B.mp3 */ = {isa = PBXFileReference; lastKnownFileType = audio.mp3; path = B.mp3; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -323,14 +323,14 @@
 			children = (
 				A6CFE96B1C2499F100623DBB /* openningBGM.wav */,
 				A6CFE9561C24997D00623DBB /* A.mp3 */,
-				A6CFE9571C24997D00623DBB /* 劇本作家.mp3 */,
-				A6CFE9581C24997D00623DBB /* 咖啡店老闆.mp3 */,
+				A6DAB5D81C25AB2D001CD22A /* B.mp3 */,
 				A6CFE9591C24997D00623DBB /* C.mp3 */,
 				A6CFE95A1C24997D00623DBB /* D.mp3 */,
+				A6CFE9581C24997D00623DBB /* 咖啡店老闆.mp3 */,
+				A6CFE9571C24997D00623DBB /* 劇本作家.mp3 */,
 				A6CFE95B1C24997D00623DBB /* 滑板少年.mp3 */,
 				A6CFE95C1C24997D00623DBB /* 滷味攤阿婆.mp3 */,
 				A6CFE95D1C24997D00623DBB /* 花店老闆.mp3 */,
-				A6CFE95E1C24997D00623DBB /* B.mp3 */,
 				A6CFE95F1C24997D00623DBB /* 補習高中生.mp3 */,
 			);
 			path = Mp3;
@@ -410,6 +410,7 @@
 				A6CFE9311C2475ED00623DBB /* 3-1_D@2x.png in Resources */,
 				A6CFE9681C24997D00623DBB /* 花店老闆.mp3 in Resources */,
 				A6CFE92E1C2475ED00623DBB /* 3-1_bg1@2x.png in Resources */,
+				A6DAB5D91C25AB2D001CD22A /* B.mp3 in Resources */,
 				A6CFE9331C2475ED00623DBB /* 3-D@2x.png in Resources */,
 				A6CFE9651C24997D00623DBB /* D.mp3 in Resources */,
 				A6CFE91A1C2475ED00623DBB /* 1-4@2x.png in Resources */,
@@ -445,7 +446,6 @@
 				A6CFE96C1C2499F100623DBB /* openningBGM.wav in Resources */,
 				A6CFE9301C2475ED00623DBB /* 3-1_C@2x.png in Resources */,
 				A6CFE9351C2475ED00623DBB /* 4-1_bg@2x.png in Resources */,
-				A6CFE9691C24997D00623DBB /* B.mp3 in Resources */,
 				A6CFE91D1C2475ED00623DBB /* b1-3@2x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
