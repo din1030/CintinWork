@@ -19,19 +19,29 @@
     // Do any additional setup after loading the view.
 }
 
+- (void)viewDidAppear:(BOOL)animated {
+    
+    [[CintinGlobalData sharedInstance].trackE stop];
+    [[CintinGlobalData sharedInstance].trackF stop];
+    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.8f];
+    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackB setVolume:0.8f];
+    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackC setVolume:1.0f];
+//    jazz BGM
+//    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].jazzBGM setVolume:1.0f];
+  
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender {
+    
+    // 去人物頁面
+    if ([segue.identifier isEqualToString:@"toCharVC"]) {
+        [[segue destinationViewController] setValue:@(sender.tag) forKey:@"char_id"];
+    }
 }
-*/
 
 @end

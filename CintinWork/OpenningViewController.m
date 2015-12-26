@@ -27,15 +27,16 @@
     _repeat = YES;
     _AnimationImg2 = @[[UIImage imageNamed:@"b1-1.png"], [UIImage imageNamed:@"b1-2.png"], [UIImage imageNamed:@"b1-3.png"], [UIImage imageNamed:@"b1-4.png"]];
     //    _imageView.image = _AnimationImg[0];
-    [CintinGlobalData sharedInstance];
+//    [CintinGlobalData sharedInstance];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    
-    [CintinGlobalData.sharedInstance.BGM play];
-    [CintinGlobalData.sharedInstance.trackA setVolume:0.2f];
-    [CintinGlobalData.sharedInstance.trackA play];
-    
+    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].BGM setVolume:0.5f];
+    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.2f];
+//    [CintinGlobalData.sharedInstance.BGM play];
+//    [CintinGlobalData.sharedInstance.trackA setVolume:0.2f];
+//    [CintinGlobalData.sharedInstance.trackA play];
+
     [self fadeInOutImage:_AnimationImg index:1];
     
 }

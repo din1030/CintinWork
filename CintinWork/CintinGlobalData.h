@@ -27,6 +27,8 @@ typedef NS_ENUM(NSUInteger, ParkSceneState) {
 @property AVAudioPlayer *trackF;
 @property AVAudioPlayer *trackG;
 @property AVAudioPlayer *trackH;
+@property AVAudioPlayer *trackI;
+@property AVAudioPlayer *trackJ;
 @property ParkSceneState parkSceneState;
 
 + (CintinGlobalData *)sharedInstance;

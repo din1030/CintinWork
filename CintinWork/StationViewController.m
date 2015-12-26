@@ -32,6 +32,13 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    
+    [[CintinGlobalData sharedInstance].trackC stop];
+    [[CintinGlobalData sharedInstance].trackD stop];
+    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].BGM setVolume:0.1f];
+    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.8f];
+    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackB setVolume:0.8f];
+    
     [UIView transitionWithView:_OLBtn
                       duration:1.0f
                        options:0

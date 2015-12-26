@@ -8,8 +8,6 @@
 
 #import "ParkViewController.h"
 #import "characterViewController.h"
-#import "CintinGlobalData.h"
-
 
 @interface ParkViewController()
 
@@ -70,15 +68,20 @@
             break;
             
         case buskerViewedState:
-            [[CintinGlobalData sharedInstance].BGM play];
-            [[CintinGlobalData sharedInstance].trackA play];
-            [[CintinGlobalData sharedInstance].trackC play];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].BGM setVolume:0.1f];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.2f];
+//            [[CintinGlobalData sharedInstance].BGM play];
+//            [[CintinGlobalData sharedInstance].trackA play];
+//            [[CintinGlobalData sharedInstance].trackC play];
             break;
             
         case completedState:
-            [[CintinGlobalData sharedInstance].BGM play];
-            [[CintinGlobalData sharedInstance].trackA play];
-            [[CintinGlobalData sharedInstance].trackC play];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].BGM setVolume:0.1f];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.8f];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackB setVolume:0.8f];
+//            [[CintinGlobalData sharedInstance].BGM play];
+//            [[CintinGlobalData sharedInstance].trackA play];
+//            [[CintinGlobalData sharedInstance].trackC play];
             break;
         
         default:

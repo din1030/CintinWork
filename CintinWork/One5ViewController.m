@@ -29,6 +29,8 @@
 - (void)viewDidAppear:(BOOL)animated {
     
     [self doVolumeFade];
+    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackB setVolume:0.3f];
+    
     [UIView transitionWithView:_OLImg
                       duration:2.0f
                        options:UIViewAnimationOptionAutoreverse
@@ -60,9 +62,9 @@
 }
 
 -(void)doVolumeFade {
-    if ([[CintinGlobalData sharedInstance].BGM isPlaying] &&[CintinGlobalData sharedInstance].BGM.volume > 0.2f) {
-        [CintinGlobalData sharedInstance].BGM.volume -= 0.05f;
-        [self performSelector:@selector(doVolumeFade) withObject:nil afterDelay:0.5];
+    if ([[CintinGlobalData sharedInstance].BGM isPlaying] &&[CintinGlobalData sharedInstance].BGM.volume > 0.1f) {
+        [CintinGlobalData sharedInstance].BGM.volume -= 0.025f;
+        [self performSelector:@selector(doVolumeFade) withObject:nil afterDelay:0.3f];
     }
 }
 

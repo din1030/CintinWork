@@ -7,6 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "CintinGlobalData.h"
+
 
 @interface GeneralViewController : UIViewController
 

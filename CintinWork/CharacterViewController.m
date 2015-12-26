@@ -28,32 +28,112 @@
             
         case 1:
             _charBG.image = [UIImage imageNamed:@"2-A.png"];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.8f];
             [[CintinGlobalData sharedInstance].BGM stop];
-            [[CintinGlobalData sharedInstance].trackC stop];
-            [[CintinGlobalData sharedInstance].trackA play];
+            [[CintinGlobalData sharedInstance].trackB stop];
             break;
             
         case 2:
             _charBG.image = [UIImage imageNamed:@"2-B.png"];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackB setVolume:0.8f];
             [[CintinGlobalData sharedInstance].BGM stop];
             [[CintinGlobalData sharedInstance].trackA stop];
-            [[CintinGlobalData sharedInstance].trackB play];
             break;
             
         case 3:
             _charBG.image = [UIImage imageNamed:@"3-C.png"];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackC setVolume:1.0f];
             [[CintinGlobalData sharedInstance].BGM stop];
             [[CintinGlobalData sharedInstance].trackA stop];
             [[CintinGlobalData sharedInstance].trackB stop];
-            [[CintinGlobalData sharedInstance].trackC play];
+            [[CintinGlobalData sharedInstance].trackD stop];
             break;
             
         case 4:
             _charBG.image = [UIImage imageNamed:@"3-D.png"];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackD setVolume:0.8f];
             [[CintinGlobalData sharedInstance].BGM stop];
             [[CintinGlobalData sharedInstance].trackA stop];
             [[CintinGlobalData sharedInstance].trackB stop];
-            [[CintinGlobalData sharedInstance].trackD play];
+            [[CintinGlobalData sharedInstance].trackC stop];
+            break;
+            
+        case 5:
+            _charBG.image = [UIImage imageNamed:@"4-E.png"];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackE setVolume:0.8f];
+            [[CintinGlobalData sharedInstance].BGM stop];
+            [[CintinGlobalData sharedInstance].trackA stop];
+            [[CintinGlobalData sharedInstance].trackB stop];
+            [[CintinGlobalData sharedInstance].trackC stop];
+            [[CintinGlobalData sharedInstance].trackD stop];
+            [[CintinGlobalData sharedInstance].trackF stop];
+            break;
+            
+        case 6:
+            _charBG.image = [UIImage imageNamed:@"4-F.png"];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackF setVolume:0.8f];
+            [[CintinGlobalData sharedInstance].BGM stop];
+            [[CintinGlobalData sharedInstance].trackA stop];
+            [[CintinGlobalData sharedInstance].trackB stop];
+            [[CintinGlobalData sharedInstance].trackC stop];
+            [[CintinGlobalData sharedInstance].trackD stop];
+            [[CintinGlobalData sharedInstance].trackE stop];
+            break;
+            
+        case 7:
+            _charBG.image = [UIImage imageNamed:@"5-G.png"];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackG setVolume:0.8f];
+            [[CintinGlobalData sharedInstance].BGM stop];
+            [[CintinGlobalData sharedInstance].trackA stop];
+            [[CintinGlobalData sharedInstance].trackB stop];
+            [[CintinGlobalData sharedInstance].trackC stop];
+            [[CintinGlobalData sharedInstance].trackD stop];
+            [[CintinGlobalData sharedInstance].trackE stop];
+            [[CintinGlobalData sharedInstance].trackF stop];
+            [[CintinGlobalData sharedInstance].trackH stop];
+            break;
+            
+        case 8:
+            _charBG.image = [UIImage imageNamed:@"5-H.png"];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackH setVolume:0.8f];
+            [[CintinGlobalData sharedInstance].BGM stop];
+            [[CintinGlobalData sharedInstance].trackA stop];
+            [[CintinGlobalData sharedInstance].trackB stop];
+            [[CintinGlobalData sharedInstance].trackC stop];
+            [[CintinGlobalData sharedInstance].trackD stop];
+            [[CintinGlobalData sharedInstance].trackE stop];
+            [[CintinGlobalData sharedInstance].trackF stop];
+            [[CintinGlobalData sharedInstance].trackG stop];
+            break;
+            
+        case 9:
+            _charBG.image = [UIImage imageNamed:@"6-I.png"];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackI setVolume:0.8f];
+            [[CintinGlobalData sharedInstance].BGM stop];
+            [[CintinGlobalData sharedInstance].trackA stop];
+            [[CintinGlobalData sharedInstance].trackB stop];
+            [[CintinGlobalData sharedInstance].trackC stop];
+            [[CintinGlobalData sharedInstance].trackD stop];
+            [[CintinGlobalData sharedInstance].trackE stop];
+            [[CintinGlobalData sharedInstance].trackF stop];
+            [[CintinGlobalData sharedInstance].trackG stop];
+            [[CintinGlobalData sharedInstance].trackH stop];
+            [[CintinGlobalData sharedInstance].trackJ stop];
+            break;
+            
+        case 10:
+            _charBG.image = [UIImage imageNamed:@"6-J.png"];
+            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackJ setVolume:0.8f];
+            [[CintinGlobalData sharedInstance].BGM stop];
+            [[CintinGlobalData sharedInstance].trackA stop];
+            [[CintinGlobalData sharedInstance].trackB stop];
+            [[CintinGlobalData sharedInstance].trackC stop];
+            [[CintinGlobalData sharedInstance].trackD stop];
+            [[CintinGlobalData sharedInstance].trackE stop];
+            [[CintinGlobalData sharedInstance].trackF stop];
+            [[CintinGlobalData sharedInstance].trackG stop];
+            [[CintinGlobalData sharedInstance].trackH stop];
+            [[CintinGlobalData sharedInstance].trackI stop];
             break;
             
         default:
