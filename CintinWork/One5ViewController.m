@@ -39,8 +39,9 @@
                     }
                     completion:^(BOOL finished){
                         
-                        _OLImg.frame = (CGRect){456, 210, _OLImg.frame.size.width, _OLImg.frame.size.height};
                         _OLImg.alpha = 0;
+                        _OLImg.frame = (CGRect){456, 210, _OLImg.frame.size.width, _OLImg.frame.size.height};
+                        
                         [UIView transitionWithView:_OLImg
                                           duration:1.0f
                                            options:0

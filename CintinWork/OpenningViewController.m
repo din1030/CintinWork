@@ -13,8 +13,11 @@
 
 @property NSArray *AnimationImg, *AnimationImg2;
 @property BOOL repeat;
+@property int page;
 @property (strong, nonatomic) IBOutlet UIImageView *imageView;
 
+- (IBAction)clickNext:(id)sender;
+- (IBAction)clickBack:(id)sender;
 
 @end
 
@@ -22,22 +25,27 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
-    _AnimationImg = @[[UIImage imageNamed:@"1-1.png"], [UIImage imageNamed:@"1-2.png"], [UIImage imageNamed:@"1-3.png"], [UIImage imageNamed:@"1-4.png"]];
     _repeat = YES;
-    _AnimationImg2 = @[[UIImage imageNamed:@"b1-1.png"], [UIImage imageNamed:@"b1-2.png"], [UIImage imageNamed:@"b1-3.png"], [UIImage imageNamed:@"b1-4.png"]];
-    //    _imageView.image = _AnimationImg[0];
-//    [CintinGlobalData sharedInstance];
+    _page = 0;
+    _AnimationImg = @[[UIImage imageNamed:@"1-1.png"], [UIImage imageNamed:@"1-2.png"], [UIImage imageNamed:@"1-3.png"],
+                      [UIImage imageNamed:@"1-4_start.png"],[UIImage imageNamed:@"b1-1.png"], [UIImage imageNamed:@"b1-2.png"],
+                      [UIImage imageNamed:@"b1-3.png"], [UIImage imageNamed:@"b1-4_start.png"]];
+    [CintinGlobalData sharedInstance];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].BGM setVolume:0.5f];
-    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.2f];
-//    [CintinGlobalData.sharedInstance.BGM play];
-//    [CintinGlobalData.sharedInstance.trackA setVolume:0.2f];
-//    [CintinGlobalData.sharedInstance.trackA play];
-
-    [self fadeInOutImage:_AnimationImg index:1];
+    
+    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.BGM setVolume:1.0f];
+    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackA setVolume:0.2f];
+    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackB setVolume:0.0f];
+    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackC setVolume:0.0f];
+    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackD setVolume:0.0f];
+    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackE setVolume:0.0f];
+    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackF setVolume:0.0f];
+    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackG setVolume:0.0f];
+    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackH setVolume:0.0f];
+    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackI setVolume:0.0f];
+    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackJ setVolume:0.0f];
     
 }
 
@@ -48,8 +56,6 @@
 
 - (void)fadeInOutImage:(NSArray<UIImage *> *)imageArr index:(int)i {
     _imageView.frame = (CGRect){0, 0, 1024, 768};
-    // 靜止時間
-    sleep(2);
     [UIView transitionWithView:_imageView
                       duration:2.0f
                        options:UIViewAnimationOptionTransitionCrossDissolve
@@ -57,39 +63,56 @@
                         _imageView.image = imageArr[i];
                     }
                     completion:^(BOOL finished){
-//                        [self performSegueWithIdentifier:@"to_1_5" sender:self];
-//                        return;
-//#warning shortcut to 1-5
-                        // 還有下一張圖
-                        if (i < [imageArr count] - 1) {
-                            [self fadeInOutImage:imageArr index:(i+1)];
-                        } else if (i == [imageArr count] - 1){
+                        if (i == 3 || i == [imageArr count] - 1){
                             [self rollLongImageView];
                         }
-                        
                     }];
 }
 
 - (void)rollLongImageView {
     
     _imageView.frame = (CGRect){0, -1536, 1024, 2304};
-    _imageView.image = (_repeat) ? [UIImage imageNamed:@"1-4-long.png"] : [UIImage imageNamed:@"b1-4-long.png"];
+    _imageView.image = (_repeat) ? [UIImage imageNamed:@"1-4_long.png"] : [UIImage imageNamed:@"b1-4_long.png"];
     
+    for(UIView *view in self.view.subviews) {
+        if ([view isKindOfClass:[UIButton class]]) {
+            view.userInteractionEnabled = NO;
+        }
+    }
     [UIView transitionWithView:_imageView
                       duration:9.0f
                        options:UIViewAnimationOptionCurveLinear
-                     animations:^{
+                    animations:^{
                          [_imageView setFrame:(CGRect){0, 0, 1024, 2304}];
                      }
-                     completion:^(BOOL finished){
-                         if (_repeat) {
-                             [self fadeInOutImage:_AnimationImg2 index:1];
-                             _repeat = NO;
-                         } else {
-                             sleep(2);
-                             [self performSegueWithIdentifier:@"to_1_5" sender:self];
-                         }
-                     }];
+                    completion:^(BOOL finished){
+                        _repeat = NO;
+                        for(UIView *view in self.view.subviews) {
+                            if ([view isKindOfClass:[UIButton class]]) {
+                                view.userInteractionEnabled = YES;
+                            }
+                        }
+                    }];
+    
+}
+
+- (IBAction)clickNext:(id)sender {
+    
+    if (_page < [_AnimationImg count] - 1) {
+        [self fadeInOutImage:_AnimationImg index:++_page];
+    } else {
+        [self performSegueWithIdentifier:@"to_1_5" sender:self];
+    }
+    
+}
+
+- (IBAction)clickBack:(id)sender {
+    if (_page > 0) {
+        [self fadeInOutImage:_AnimationImg index:--_page];
+    } else {
+        [self.navigationController popViewControllerAnimated:YES];
+    }
+    
     
 }
 

@@ -58,7 +58,7 @@
             
         case initialState: {
             [UIView transitionWithView:_OLBtn
-                              duration:1.0f
+                              duration:3.0f
                                options:0
                             animations:^{
                                 _OLBtn.alpha = 1.0f;

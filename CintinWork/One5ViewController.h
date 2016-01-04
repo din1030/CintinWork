@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GeneralViewController.h"
 
-@interface One5ViewController : UIViewController
+@interface One5ViewController : GeneralViewController
 
 @end

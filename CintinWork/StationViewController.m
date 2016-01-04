@@ -19,7 +19,7 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     // Do any additional setup after loading the view.
-    // 設定偵測動畫
+    // 動畫
     NSMutableArray *animationImg = [NSMutableArray arrayWithObjects:
                                     [UIImage imageNamed:@"3-1_bg1.png"],
                                     [UIImage imageNamed:@"3-1_bg2.png"],nil];

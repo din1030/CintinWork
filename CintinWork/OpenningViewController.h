@@ -7,7 +7,8 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "GeneralViewController.h"
 
-@interface OpenningViewController : UIViewController
+@interface OpenningViewController : GeneralViewController
 
 @end

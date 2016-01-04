@@ -13,7 +13,7 @@
 
 @property (strong, nonatomic) IBOutlet UIImageView *charBG;
 @property NSString *segueToNextScene;
-- (IBAction)back:(UIButton *)sender;
+- (IBAction)clickBack:(UIButton *)sender;
 - (IBAction)next:(UIButton *)sender;
 
 @end
@@ -146,7 +146,7 @@
     // Dispose of any resources that can be recreated.
 }
 
-- (IBAction)back:(id)sender {
+- (IBAction)clickBack:(id)sender {
     [self.navigationController popViewControllerAnimated:YES];
 }
 

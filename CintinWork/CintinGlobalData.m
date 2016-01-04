@@ -24,17 +24,17 @@
 - (id)init {
 	
 	if (self = [super init]) {
-        _BGM = [self setPlayer:_BGM pathForResource:@"openningBGM" ofType:@"wav"];
+        _BGM = [self setPlayer:_BGM pathForResource:@"openningBGM2" ofType:@"mp3"];
         _trackA = [self setPlayer:_trackA pathForResource:@"A" ofType:@"mp3"];
         _trackB = [self setPlayer:_trackB pathForResource:@"B" ofType:@"mp3"];
         _trackC = [self setPlayer:_trackC pathForResource:@"C" ofType:@"mp3"];
-        _trackD = [self setPlayer:_trackA pathForResource:@"D" ofType:@"mp3"];
-        _trackE = [self setPlayer:_trackB pathForResource:@"E" ofType:@"mp3"];
-        _trackF = [self setPlayer:_trackC pathForResource:@"F" ofType:@"mp3"];
-        _trackG = [self setPlayer:_trackA pathForResource:@"G" ofType:@"mp3"];
-        _trackH = [self setPlayer:_trackB pathForResource:@"H" ofType:@"mp3"];
-        _trackI = [self setPlayer:_trackC pathForResource:@"I" ofType:@"mp3"];
-        _trackJ = [self setPlayer:_trackA pathForResource:@"J" ofType:@"mp3"];
+        _trackD = [self setPlayer:_trackD pathForResource:@"D" ofType:@"mp3"];
+        _trackE = [self setPlayer:_trackE pathForResource:@"E" ofType:@"mp3"];
+        _trackF = [self setPlayer:_trackF pathForResource:@"F" ofType:@"mp3"];
+        _trackG = [self setPlayer:_trackG pathForResource:@"G" ofType:@"mp3"];
+        _trackH = [self setPlayer:_trackH pathForResource:@"H" ofType:@"mp3"];
+        _trackI = [self setPlayer:_trackI pathForResource:@"I" ofType:@"mp3"];
+        _trackJ = [self setPlayer:_trackJ pathForResource:@"J" ofType:@"mp3"];
         _parkSceneState = initialState;
     }
 	

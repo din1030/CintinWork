@@ -12,6 +12,4 @@
 
 @interface GeneralViewController : UIViewController
 
-
-
 @end
