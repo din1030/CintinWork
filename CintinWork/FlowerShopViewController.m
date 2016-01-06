@@ -21,12 +21,7 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     
-    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.8f];
-    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackB setVolume:0.8f];
-    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackC setVolume:1.0f];
-    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackE setVolume:0.8f];
-    //    jazz BGM
-    //    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].jazzBGM setVolume:1.0f];
+    [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0.6, @0.8, @1, @0, @.8, @0, @0, @0, @0, @0]];
     
 }
 

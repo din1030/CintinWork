@@ -17,12 +17,12 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="hj9-GR-D0y" kind="relationship" relationship="rootViewController" id="0OM-zE-D03"/>
+                        <segue destination="Mh7-2n-KWY" kind="relationship" relationship="rootViewController" id="Mek-xh-Zrb"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QCZ-fz-J54" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="-5376" y="344"/>
+            <point key="canvasLocation" x="-4288" y="2578"/>
         </scene>
         <!--Openning View Controller-->
         <scene sceneID="tne-QT-ifu">
@@ -159,30 +159,6 @@
                                     <segue destination="85o-eG-RbH" kind="push" identifier="toCharVC" id="2Ey-Gj-zc6"/>
                                 </connections>
                             </button>
-                            <view contentMode="scaleToFill" id="kyr-lk-wVj">
-                                <rect key="frame" x="356" y="291" width="312" height="187"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <subviews>
-                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="window.png" id="CRZ-8C-YdZ">
-                                        <rect key="frame" x="0.0" y="12" width="300" height="175"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                    </imageView>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CGm-eW-lEu">
-                                        <rect key="frame" x="277" y="0.0" width="35" height="35"/>
-                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <state key="normal" image="close.png"/>
-                                        <connections>
-                                            <action selector="clickHintClose:" destination="Djr-BI-H8i" eventType="touchUpInside" id="o3t-9H-Q6b"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
-                            </view>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WhO-nN-0FC">
-                                <rect key="frame" x="946" y="694" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hint.png"/>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="lxk-tV-3jK">
                                 <rect key="frame" x="946" y="30" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -207,6 +183,40 @@
                                     <segue destination="PhY-3y-1QW" kind="push" id="Jp1-VX-d4W"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="2-1_text1.png" id="O04-fR-TCG">
+                                <rect key="frame" x="50" y="50" width="435" height="215"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="2-1_text3.png" id="XHh-U5-bh5">
+                                <rect key="frame" x="480" y="30" width="435" height="395"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
+                            <view contentMode="scaleToFill" id="kyr-lk-wVj">
+                                <rect key="frame" x="356" y="291" width="312" height="187"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="window.png" id="CRZ-8C-YdZ">
+                                        <rect key="frame" x="0.0" y="12" width="300" height="175"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="CGm-eW-lEu">
+                                        <rect key="frame" x="277" y="0.0" width="35" height="35"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <state key="normal" image="close.png"/>
+                                        <connections>
+                                            <action selector="clickHintClose:" destination="Djr-BI-H8i" eventType="touchUpInside" id="o3t-9H-Q6b"/>
+                                        </connections>
+                                    </button>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="點選街頭音樂家" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="jtH-FJ-Vn0">
+                                        <rect key="frame" x="19" y="69" width="263" height="61"/>
+                                        <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="calibratedWhite"/>
+                            </view>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -215,9 +225,11 @@
                     <connections>
                         <outlet property="OLBtn" destination="6LX-mW-dX1" id="juF-ej-FqF"/>
                         <outlet property="buskerBtn" destination="4I1-RL-fSY" id="we4-Kj-Q9L"/>
-                        <outlet property="hint" destination="WhO-nN-0FC" id="57y-5g-vM9"/>
-                        <outlet property="hintView" destination="kyr-lk-wVj" id="ibG-Fr-TXD"/>
+                        <outlet property="hintString" destination="jtH-FJ-Vn0" id="WVj-NT-K7m"/>
+                        <outlet property="hintView" destination="kyr-lk-wVj" id="Qoh-OO-1lG"/>
+                        <outlet property="leftTextImg" destination="O04-fR-TCG" id="lHF-3b-sgu"/>
                         <outlet property="next" destination="9fg-OA-5qV" id="j2n-zg-sfY"/>
+                        <outlet property="rightTextImg" destination="XHh-U5-bh5" id="r1q-Fh-gSU"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="0lL-A6-yAk" sceneMemberID="firstResponder"/>
@@ -276,6 +288,10 @@
                                     <action selector="clickBack:" destination="6Tg-au-zky" eventType="touchUpInside" id="hzU-HN-Bka"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="1-5text.png" id="Exf-Wr-oSQ">
+                                <rect key="frame" x="80" y="70" width="290" height="95"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -312,7 +328,7 @@
                                 </connections>
                             </button>
                             <button opaque="NO" userInteractionEnabled="NO" tag="2" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="OFx-ot-5fa">
-                                <rect key="frame" x="48" y="270" width="105" height="380"/>
+                                <rect key="frame" x="140" y="300" width="105" height="380"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="3-1_A.png"/>
                             </button>
@@ -345,6 +361,10 @@
                                     <segue destination="Ruv-Dp-bTS" kind="push" identifier="toCharVC" id="zIT-wy-Fgz"/>
                                 </connections>
                             </button>
+                            <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" image="3-1_text.png" id="TiU-rN-Ivi">
+                                <rect key="frame" x="50" y="70" width="350" height="145"/>
+                                <autoresizingMask key="autoresizingMask"/>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -454,11 +474,10 @@
                                     <action selector="clickBack:" destination="85o-eG-RbH" eventType="touchUpInside" id="DVD-Ls-w54"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="eye-HG-KBb">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="hint_music.png" id="sDR-Hq-NSj">
                                 <rect key="frame" x="946" y="634" width="48" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hint_music.png"/>
-                            </button>
+                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
@@ -466,6 +485,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="charBG" destination="Fv2-nD-t7a" id="7XE-9c-SCg"/>
+                        <outlet property="hintNote" destination="sDR-Hq-NSj" id="yio-XD-Vcj"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="90c-eJ-vG6" sceneMemberID="firstResponder"/>
@@ -488,11 +508,17 @@
                                 <rect key="frame" x="946" y="692" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="next_m.png"/>
+                                <connections>
+                                    <segue destination="7Lt-Gh-EQu" kind="push" id="tIg-EJ-Tlp"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Z7W-Ei-hZB">
                                 <rect key="frame" x="946" y="30" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="home.png"/>
+                                <connections>
+                                    <action selector="backHome:" destination="QO7-xq-THb" eventType="touchUpInside" id="aFQ-6m-wsJ"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="nW4-7P-Hmk">
                                 <rect key="frame" x="28" y="692" width="50" height="50"/>
@@ -547,13 +573,19 @@
                                 <rect key="frame" x="946" y="30" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="home.png"/>
+                                <connections>
+                                    <action selector="backHome:" destination="A9Y-A5-nI8" eventType="touchUpInside" id="Yi0-wd-Ahe"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Umo-2N-WrD">
                                 <rect key="frame" x="28" y="692" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="back.png"/>
+                                <connections>
+                                    <action selector="clickBack:" destination="A9Y-A5-nI8" eventType="touchUpInside" id="6no-Ea-Rwf"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Q9-Lr-7jD">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="2Q9-Lr-7jD">
                                 <rect key="frame" x="360" y="100" width="105" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="5-1_H.png"/>
@@ -561,7 +593,7 @@
                                     <segue destination="Ror-rn-gQX" kind="push" identifier="toCharVC" id="mBQ-vI-Krc"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ueO-gx-1Mu">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ueO-gx-1Mu">
                                 <rect key="frame" x="740" y="240" width="170" height="427"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="5-1_G.png"/>
@@ -590,7 +622,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2-A.png" id="Q2Z-h1-z0p">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5-G.png" id="Q2Z-h1-z0p">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -598,11 +630,17 @@
                                 <rect key="frame" x="946" y="692" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="next_m.png"/>
+                                <connections>
+                                    <segue destination="nIw-AK-bIb" kind="push" id="aPs-zV-oJi"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="fBQ-03-R7h">
                                 <rect key="frame" x="946" y="30" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="home.png"/>
+                                <connections>
+                                    <action selector="backHome:" destination="Ror-rn-gQX" eventType="touchUpInside" id="eBh-T1-7Q2"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Kqd-2b-MXB">
                                 <rect key="frame" x="28" y="692" width="50" height="50"/>
@@ -624,7 +662,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="charBG" destination="Q2Z-h1-z0p" id="yU2-Y3-4C9"/>
-                        <segue destination="qGl-rf-UeI" kind="push" identifier="toBushiStreet" id="Lih-Ew-SH1"/>
                         <segue destination="a71-Ha-vmx" kind="push" identifier="toCafe" id="hlk-hm-EZg"/>
                     </connections>
                 </viewController>
@@ -640,7 +677,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2-A.png" id="LFJ-PH-D21">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="5-H.png" id="LFJ-PH-D21">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -648,11 +685,17 @@
                                 <rect key="frame" x="946" y="692" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="next_m.png"/>
+                                <connections>
+                                    <segue destination="uTr-Si-KMw" kind="push" id="EZl-N4-ntd"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="I9r-3r-nOt">
                                 <rect key="frame" x="946" y="30" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="home.png"/>
+                                <connections>
+                                    <action selector="backHome:" destination="1gf-JH-qGV" eventType="touchUpInside" id="VAN-04-ccE"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Iah-ZM-mei">
                                 <rect key="frame" x="28" y="692" width="50" height="50"/>
@@ -683,27 +726,27 @@
         <!--Bushi Street-->
         <scene sceneID="bS3-WO-CXO">
             <objects>
-                <viewController title="Bushi Street" id="HWG-WS-207" sceneMemberID="viewController">
+                <viewController title="Bushi Street" id="HWG-WS-207" customClass="BushiViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="ERc-PO-5PW">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="YC0-8g-I9j">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6-1.png" id="YC0-8g-I9j">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r62-gu-ABA">
-                                <rect key="frame" x="-1" y="287" width="390" height="481"/>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="r62-gu-ABA">
+                                <rect key="frame" x="110" y="290" width="345" height="445"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="4-1_F.png"/>
+                                <state key="normal" backgroundImage="6-1_J.png"/>
                                 <connections>
                                     <segue destination="M6Z-Pl-87x" kind="push" identifier="toCharVC" id="YM7-6K-rUB"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cb0-YI-Gcs">
-                                <rect key="frame" x="544" y="208" width="230" height="280"/>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="cb0-YI-Gcs">
+                                <rect key="frame" x="658" y="260" width="366" height="432"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="4-1_E.png"/>
+                                <state key="normal" image="6-1_I.png"/>
                                 <connections>
                                     <segue destination="M6Z-Pl-87x" kind="push" identifier="toCharVC" id="0fe-Rt-IPT"/>
                                 </connections>
@@ -747,7 +790,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2-A.png" id="BAl-Zc-tVo">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6-I.png" id="BAl-Zc-tVo">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -755,11 +798,17 @@
                                 <rect key="frame" x="946" y="692" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="next_m.png"/>
+                                <connections>
+                                    <segue destination="uTr-Si-KMw" kind="push" id="o8t-BN-7ug"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="DV9-3I-oCC">
                                 <rect key="frame" x="946" y="30" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="home.png"/>
+                                <connections>
+                                    <action selector="backHome:" destination="M6Z-Pl-87x" eventType="touchUpInside" id="rPe-lL-772"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="umX-id-QEb">
                                 <rect key="frame" x="28" y="692" width="50" height="50"/>
@@ -799,7 +848,7 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="trR-Ul-y1L">
+                            <button opaque="NO" tag="6" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="trR-Ul-y1L">
                                 <rect key="frame" x="-1" y="287" width="390" height="481"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="4-1_F.png"/>
@@ -807,7 +856,7 @@
                                     <segue destination="y7v-Ln-b5i" kind="push" identifier="toCharVC" id="zAi-Oh-UJL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d4T-eh-GFv">
+                            <button opaque="NO" tag="5" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="d4T-eh-GFv">
                                 <rect key="frame" x="544" y="208" width="230" height="280"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="4-1_E.png"/>
@@ -862,11 +911,17 @@
                                 <rect key="frame" x="946" y="692" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="next_m.png"/>
+                                <connections>
+                                    <segue destination="uTr-Si-KMw" kind="push" id="cCC-dS-ytv"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8e9-OQ-9Py">
                                 <rect key="frame" x="946" y="30" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="home.png"/>
+                                <connections>
+                                    <action selector="backHome:" destination="y7v-Ln-b5i" eventType="touchUpInside" id="BVi-Fy-P7D"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="den-ky-8IY">
                                 <rect key="frame" x="28" y="692" width="50" height="50"/>
@@ -897,12 +952,12 @@
         <!--Before Cafe-->
         <scene sceneID="yPZ-Wl-Kkl">
             <objects>
-                <viewController storyboardIdentifier="b4Cafe" title="Before Cafe" id="5ml-Y3-UhX" customClass="SingleSceneViewController" sceneMemberID="viewController">
+                <viewController restorationIdentifier="b4Cafe" title="Before Cafe" id="5ml-Y3-UhX" customClass="SingleSceneViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="J4s-0l-19E">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3-1_bg1.png" id="etf-U9-o5P">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4-0.png" id="etf-U9-o5P">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -941,22 +996,25 @@
             </objects>
             <point key="canvasLocation" x="3529" y="578"/>
         </scene>
-        <!--View Controller-->
+        <!--Single Scene View Controller-->
         <scene sceneID="0ex-ra-Qaw">
             <objects>
-                <viewController id="uTr-Si-KMw" sceneMemberID="viewController">
+                <viewController restorationIdentifier="homeScene" id="uTr-Si-KMw" customClass="SingleSceneViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="yCf-iC-xWy">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-3.png" id="qm4-uZ-Lax">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="7-1.png" id="qm4-uZ-Lax">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="WfX-sS-73K">
                                 <rect key="frame" x="946" y="694" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hint.png"/>
+                                <state key="normal" backgroundImage="next.png"/>
+                                <connections>
+                                    <segue destination="lNR-6l-TrQ" kind="push" id="Wcj-Bm-D2i"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="oIJ-sE-hYg">
                                 <rect key="frame" x="946" y="30" width="50" height="50"/>
@@ -979,69 +1037,13 @@
                     </view>
                     <navigationItem key="navigationItem" id="XQe-U5-lU8"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="bgAnimation" destination="qm4-uZ-Lax" id="uBx-p1-sK4"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="AiA-iy-cQp" sceneMemberID="firstResponder"/>
             </objects>
             <point key="canvasLocation" x="9690" y="2570"/>
-        </scene>
-        <!--Bushi Street-->
-        <scene sceneID="id5-En-9fR">
-            <objects>
-                <viewController title="Bushi Street" id="qGl-rf-UeI" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="uA7-1f-Dg3">
-                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" id="sAS-01-aXS">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="aXM-Wc-hIF">
-                                <rect key="frame" x="-1" y="287" width="390" height="481"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="4-1_F.png"/>
-                                <connections>
-                                    <segue destination="Uw0-Fp-aKd" kind="push" identifier="toCharVC" id="qbM-EC-KHi"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="otN-as-AJY">
-                                <rect key="frame" x="544" y="208" width="230" height="280"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" image="4-1_E.png"/>
-                                <connections>
-                                    <segue destination="Uw0-Fp-aKd" kind="push" identifier="toCharVC" id="MWt-rm-fak"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="K4g-ZN-sTN">
-                                <rect key="frame" x="946" y="694" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hint.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="bTg-UD-EaF">
-                                <rect key="frame" x="946" y="30" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="home.png"/>
-                                <connections>
-                                    <action selector="backHome:" destination="qGl-rf-UeI" eventType="touchUpInside" id="dDZ-cl-IIV"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MTw-vv-gaR">
-                                <rect key="frame" x="28" y="692" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="back.png"/>
-                                <connections>
-                                    <action selector="clickBack:" destination="qGl-rf-UeI" eventType="touchUpInside" id="emt-Iz-5x3"/>
-                                </connections>
-                            </button>
-                        </subviews>
-                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
-                    </view>
-                    <navigationItem key="navigationItem" id="HRP-kJ-iCp"/>
-                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="gCr-io-UPx" sceneMemberID="firstResponder"/>
-            </objects>
-            <point key="canvasLocation" x="6593" y="3314"/>
         </scene>
         <!--Character View Controller-->
         <scene sceneID="ehN-Ro-3iC">
@@ -1051,7 +1053,7 @@
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="2-A.png" id="sNh-ax-2R2">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6-J.png" id="sNh-ax-2R2">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1059,11 +1061,17 @@
                                 <rect key="frame" x="946" y="692" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="next_m.png"/>
+                                <connections>
+                                    <segue destination="uTr-Si-KMw" kind="push" id="mZQ-Hr-vxH"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Gs6-NN-tdu">
                                 <rect key="frame" x="946" y="30" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="home.png"/>
+                                <connections>
+                                    <action selector="backHome:" destination="Uw0-Fp-aKd" eventType="touchUpInside" id="Ppi-fN-g8r"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="73F-vV-Ugg">
                                 <rect key="frame" x="28" y="692" width="50" height="50"/>
@@ -1094,12 +1102,12 @@
         <!--Before Cafe-->
         <scene sceneID="FFs-86-Ovh">
             <objects>
-                <viewController title="Before Cafe" id="a71-Ha-vmx" sceneMemberID="viewController">
+                <viewController restorationIdentifier="b4Cafe" title="Before Cafe" id="a71-Ha-vmx" customClass="SingleSceneViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="KBX-8O-u1D">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3-1_bg1.png" id="u2v-D4-8DG">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="4-0.png" id="u2v-D4-8DG">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
@@ -1138,37 +1146,32 @@
             </objects>
             <point key="canvasLocation" x="5082" y="4730"/>
         </scene>
-        <!--View Controller-->
+        <!--Single Scene View Controller-->
         <scene sceneID="pEw-a5-7l3">
             <objects>
-                <viewController id="lNR-6l-TrQ" sceneMemberID="viewController">
+                <viewController id="lNR-6l-TrQ" customClass="SingleSceneViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="6Fb-UV-aXe">
                         <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="1-2.png" id="cbE-rw-Zw7">
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8-1.png" id="cbE-rw-Zw7">
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dnS-K8-cpu">
-                                <rect key="frame" x="946" y="694" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="hint.png"/>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Okc-vw-LBD">
-                                <rect key="frame" x="946" y="30" width="50" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" backgroundImage="home.png"/>
-                                <connections>
-                                    <action selector="backHome:" destination="lNR-6l-TrQ" eventType="touchUpInside" id="Wls-yJ-bb0"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="RHP-zb-13S">
                                 <rect key="frame" x="28" y="692" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="back.png"/>
                                 <connections>
                                     <action selector="clickBack:" destination="lNR-6l-TrQ" eventType="touchUpInside" id="DAY-KK-X1G"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="WTU-I0-p8v">
+                                <rect key="frame" x="430" y="556" width="310" height="175"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="8-1_record.png"/>
+                                <connections>
+                                    <segue destination="Mh7-2n-KWY" kind="push" id="Ciy-ob-bzR"/>
                                 </connections>
                             </button>
                         </subviews>
@@ -1254,30 +1257,39 @@
                                 <rect key="frame" x="946" y="30" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="home.png"/>
+                                <connections>
+                                    <action selector="backHome:" destination="7Lt-Gh-EQu" eventType="touchUpInside" id="eBt-T5-Wfh"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="gQn-ME-Teg">
                                 <rect key="frame" x="28" y="692" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="back.png"/>
+                                <connections>
+                                    <action selector="clickBack:" destination="7Lt-Gh-EQu" eventType="touchUpInside" id="gTK-yf-ocL"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6ix-RQ-tvg">
+                            <button opaque="NO" tag="8" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="6ix-RQ-tvg">
                                 <rect key="frame" x="360" y="100" width="105" height="350"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" image="5-1_H.png"/>
+                                <connections>
+                                    <segue destination="1gf-JH-qGV" kind="push" identifier="toCharVC" id="wYT-No-wS2"/>
+                                </connections>
                             </button>
-                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Md-XK-gnR">
+                            <button opaque="NO" tag="7" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="5Md-XK-gnR">
                                 <rect key="frame" x="740" y="240" width="170" height="427"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="5-1_G.png"/>
+                                <connections>
+                                    <segue destination="1gf-JH-qGV" kind="push" identifier="toCharVC" id="1JF-HZ-QPB"/>
+                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="yWl-Gl-xVO"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
-                    <connections>
-                        <outlet property="bgAnimation" destination="aew-sG-u3s" id="aE7-HF-5a4"/>
-                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="rUd-VZ-joi" sceneMemberID="firstResponder"/>
             </objects>
@@ -1317,25 +1329,158 @@
             </objects>
             <point key="canvasLocation" x="-4094" y="344"/>
         </scene>
+        <!--Bushi Street-->
+        <scene sceneID="9Ne-QB-Vcu">
+            <objects>
+                <viewController title="Bushi Street" id="nIw-AK-bIb" customClass="BushiViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="QIP-Hx-ta1">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="6-1.png" id="oeq-2X-1ey">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" tag="10" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="mhW-9O-o9I">
+                                <rect key="frame" x="110" y="290" width="345" height="445"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="6-1_J.png"/>
+                                <connections>
+                                    <segue destination="Uw0-Fp-aKd" kind="push" identifier="toCharVC" id="UcD-Uy-fyJ"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="9" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" id="QS9-y8-Els">
+                                <rect key="frame" x="658" y="260" width="366" height="432"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" image="6-1_I.png"/>
+                                <connections>
+                                    <segue destination="Uw0-Fp-aKd" kind="push" identifier="toCharVC" id="Kko-RC-LyP"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="8Hp-sc-qLr">
+                                <rect key="frame" x="946" y="694" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="hint.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="a06-jV-7Iy">
+                                <rect key="frame" x="946" y="30" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="home.png"/>
+                                <connections>
+                                    <action selector="backHome:" destination="nIw-AK-bIb" eventType="touchUpInside" id="AxX-vg-fej"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="wat-dO-1NV">
+                                <rect key="frame" x="28" y="692" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back.png"/>
+                                <connections>
+                                    <action selector="clickBack:" destination="nIw-AK-bIb" eventType="touchUpInside" id="QUX-du-gAH"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="gW7-5m-QwA"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="4PR-fX-Hh5" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="6593" y="3314"/>
+        </scene>
+        <!--Recoed View Controller-->
+        <scene sceneID="aeh-zb-ZLW">
+            <objects>
+                <viewController id="Mh7-2n-KWY" customClass="RecoedViewController" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Rfv-Ug-lIo">
+                        <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="8-2_bg.jpg" id="LNR-5l-EWR">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="ygT-yi-rQy">
+                                <rect key="frame" x="28" y="692" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="back.png"/>
+                                <connections>
+                                    <action selector="clickBack:" destination="Mh7-2n-KWY" eventType="touchUpInside" id="XbV-EH-EO0"/>
+                                </connections>
+                            </button>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="record.png" id="zbc-Wh-QXc">
+                                <rect key="frame" x="192" y="64" width="640" height="640"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="stylus_pause.png" id="FaR-uW-gnY">
+                                <rect key="frame" x="600" y="45" width="375" height="630"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="MtP-PZ-m0q">
+                                <rect key="frame" x="60" y="60" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="play.png"/>
+                                <connections>
+                                    <action selector="clickPlayBtn:" destination="Mh7-2n-KWY" eventType="touchUpInside" id="WyV-YF-cUb"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="dco-wO-k6A">
+                                <rect key="frame" x="60" y="130" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="pause.png"/>
+                                <connections>
+                                    <action selector="clickPauseBtn:" destination="Mh7-2n-KWY" eventType="touchUpInside" id="yPW-xd-IDE"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="Hla-Mt-Q1r">
+                                <rect key="frame" x="60" y="200" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="download.png"/>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="led-wR-rom">
+                                <rect key="frame" x="60" y="290" width="50" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <state key="normal" backgroundImage="home.png"/>
+                                <connections>
+                                    <action selector="backHome:" destination="Mh7-2n-KWY" eventType="touchUpInside" id="Vxs-uK-3QN"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                    </view>
+                    <navigationItem key="navigationItem" id="k43-rY-abX"/>
+                    <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
+                    <connections>
+                        <outlet property="recordImg" destination="zbc-Wh-QXc" id="oFe-Na-fCk"/>
+                        <outlet property="stylus" destination="FaR-uW-gnY" id="IP8-SC-Ezy"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="5ce-c7-nRZ" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="11170" y="3567"/>
+        </scene>
     </scenes>
     <resources>
         <image name="1-1.png" width="1024" height="768"/>
-        <image name="1-2.png" width="1024" height="768"/>
-        <image name="1-3.png" width="1024" height="768"/>
         <image name="1-5_bg.png" width="1024" height="768"/>
         <image name="1-5_ol.png" width="145" height="484"/>
         <image name="1-5_smoke.png" width="690" height="390"/>
         <image name="1-5_smoke2.png" width="525" height="275"/>
         <image name="1-5_smoke3.png" width="615" height="350"/>
+        <image name="1-5text.png" width="290" height="95"/>
         <image name="2-1_A.png" width="510" height="610"/>
         <image name="2-1_B.png" width="1040" height="788"/>
         <image name="2-1_bg.png" width="1024" height="768"/>
+        <image name="2-1_text1.png" width="435" height="215"/>
+        <image name="2-1_text3.png" width="435" height="395"/>
         <image name="2-A.png" width="1024" height="768"/>
         <image name="3-1_A.png" width="105" height="380"/>
         <image name="3-1_C.png" width="130" height="306"/>
         <image name="3-1_D.png" width="140" height="405"/>
         <image name="3-1_bg1.png" width="1024" height="768"/>
+        <image name="3-1_text.png" width="350" height="145"/>
         <image name="3-C.png" width="1024" height="768"/>
+        <image name="4-0.png" width="1024" height="768"/>
         <image name="4-1_E.png" width="230" height="280"/>
         <image name="4-1_F.png" width="390" height="481"/>
         <image name="4-1_bg.png" width="1024" height="768"/>
@@ -1345,25 +1490,44 @@
         <image name="5-1_G.png" width="170" height="427"/>
         <image name="5-1_H.png" width="105" height="350"/>
         <image name="5-1_bg.png" width="1024" height="768"/>
+        <image name="5-G.png" width="1024" height="768"/>
+        <image name="5-H.png" width="1024" height="768"/>
+        <image name="6-1.png" width="1024" height="768"/>
+        <image name="6-1_I.png" width="366" height="432"/>
+        <image name="6-1_J.png" width="345" height="445"/>
+        <image name="6-I.png" width="1024" height="768"/>
+        <image name="6-J.png" width="1024" height="768"/>
+        <image name="7-1.png" width="1024" height="768"/>
+        <image name="8-1.png" width="1024" height="768"/>
+        <image name="8-1_record.png" width="310" height="175"/>
+        <image name="8-2_bg.jpg" width="1024" height="768"/>
         <image name="back.png" width="50" height="50"/>
         <image name="close.png" width="35" height="35"/>
         <image name="cover_1.jpg" width="1024" height="768"/>
         <image name="cover_play.png" width="125" height="100"/>
+        <image name="download.png" width="50" height="50"/>
         <image name="hint.png" width="50" height="50"/>
         <image name="hint_music.png" width="47" height="55"/>
         <image name="home.png" width="50" height="50"/>
         <image name="how.png" width="1024" height="768"/>
         <image name="next.png" width="50" height="50"/>
         <image name="next_m.png" width="50" height="50"/>
+        <image name="pause.png" width="50" height="50"/>
+        <image name="play.png" width="50" height="50"/>
+        <image name="record.png" width="640" height="640"/>
+        <image name="stylus_pause.png" width="375" height="630"/>
         <image name="window.png" width="300" height="175"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="q6A-ZH-jBK"/>
-        <segue reference="zIT-wy-Fgz"/>
         <segue reference="17N-G0-gda"/>
+        <segue reference="zIT-wy-Fgz"/>
         <segue reference="mBQ-vI-Krc"/>
-        <segue reference="qbM-EC-KHi"/>
-        <segue reference="zAi-Oh-UJL"/>
-        <segue reference="0fe-Rt-IPT"/>
+        <segue reference="Bz1-tD-OBj"/>
+        <segue reference="Kko-RC-LyP"/>
+        <segue reference="q6A-ZH-jBK"/>
+        <segue reference="YM7-6K-rUB"/>
+        <segue reference="wYT-No-wS2"/>
+        <segue reference="EZl-N4-ntd"/>
+        <segue reference="Mek-xh-Zrb"/>
     </inferredMetricsTieBreakers>
 </document>

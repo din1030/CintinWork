@@ -21,15 +21,18 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view.
+    
     _back.hidden = YES;
     _next.hidden = YES;
+    _OLImg.alpha = 0.0f;
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     
+    [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@1.0, @0.05, @0.3, @0, @0, @0, @0, @0, @0, @0, @0]];
     [self doVolumeFade];
-    [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackB setVolume:0.3f];
+    
+//    [CintinGlobalData.sharedInstance.BGM setVolume:0.3f];
     
     [UIView transitionWithView:_OLImg
                       duration:2.0f
@@ -63,9 +66,9 @@
 }
 
 -(void)doVolumeFade {
-    if ([[CintinGlobalData sharedInstance].BGM isPlaying] &&[CintinGlobalData sharedInstance].BGM.volume > 0.1f) {
-        [CintinGlobalData sharedInstance].BGM.volume -= 0.025f;
-        [self performSelector:@selector(doVolumeFade) withObject:nil afterDelay:0.3f];
+    if ([CintinGlobalData.sharedInstance.BGM isPlaying] && CintinGlobalData.sharedInstance.BGM.volume > 0.1f) {
+        CintinGlobalData.sharedInstance.BGM.volume -= 0.025f;
+        [self performSelector:@selector(doVolumeFade) withObject:nil afterDelay:0.25f];
     }
 }
 

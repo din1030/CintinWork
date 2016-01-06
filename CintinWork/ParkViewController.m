@@ -8,16 +8,18 @@
 
 #import "ParkViewController.h"
 #import "characterViewController.h"
+#import "UIView+Glow.h"
 
 @interface ParkViewController()
 
 @property (strong, nonatomic) IBOutlet UIView *hintView;
+@property (strong, nonatomic) IBOutlet UILabel *hintString;
 - (IBAction)clickHintClose:(id)sender;
-- (IBAction)selectCharacter:(UIButton *)sender;
+@property (strong, nonatomic) IBOutlet UIImageView *leftTextImg;
+@property (strong, nonatomic) IBOutlet UIImageView *rightTextImg;
 @property (strong, nonatomic) IBOutlet UIButton *buskerBtn;
 @property (strong, nonatomic) IBOutlet UIButton *OLBtn;
 @property (strong, nonatomic) IBOutlet UIButton *next;
-@property (strong, nonatomic) IBOutlet UIButton *hint;
 
 
 @end
@@ -36,17 +38,27 @@
 
 - (void)viewWillAppear:(BOOL)animated {
     switch ([CintinGlobalData sharedInstance].parkSceneState) {
-        
+            
+        case initialState:
+            _hintView.hidden = YES;
+            _leftTextImg.hidden = NO;
+            _rightTextImg.hidden = YES;
+            break;
+            
         case buskerViewedState:
+            _hintView.hidden = YES;
+            _hintString.text = @"點選自己，聽聽我的音樂";
             _OLBtn.userInteractionEnabled = YES;
+            _leftTextImg.hidden = YES;
+            _rightTextImg.hidden = NO;
             break;
             
         case completedState:
             _next.hidden = NO;
-            _hint.hidden = YES;
+            _rightTextImg.image = [UIImage imageNamed:@"2-1_text4.png"];
+            _rightTextImg.hidden = NO;
             break;
             
-        case initialState:
         default:
             break;
     }
@@ -57,6 +69,10 @@
     switch ([CintinGlobalData sharedInstance].parkSceneState) {
             
         case initialState: {
+            while (CintinGlobalData.sharedInstance.trackB.volume < 0.5) {
+                CintinGlobalData.sharedInstance.trackB.volume += 0.25;
+                sleep(0.05);
+            }
             [UIView transitionWithView:_OLBtn
                               duration:3.0f
                                options:0
@@ -64,29 +80,29 @@
                                 _OLBtn.alpha = 1.0f;
                             }
                             completion:nil];
+            
+            [self performSelector:@selector(changeText) withObject:nil afterDelay:7.0f];
+            [self performSelector:@selector(characterGlow:) withObject:_buskerBtn afterDelay:10.0f];
+            
             }
             break;
-            
+    
         case buskerViewedState:
-            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].BGM setVolume:0.1f];
-            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.2f];
-//            [[CintinGlobalData sharedInstance].BGM play];
-//            [[CintinGlobalData sharedInstance].trackA play];
-//            [[CintinGlobalData sharedInstance].trackC play];
+            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0.1, @0.1, @0.8, @0, @0, @0, @0, @0, @0, @0, @0]];
+            [self performSelector:@selector(characterGlow:) withObject:_OLBtn afterDelay:10.0f];
             break;
             
         case completedState:
-            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].BGM setVolume:0.1f];
-            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.8f];
-            [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackB setVolume:0.8f];
-//            [[CintinGlobalData sharedInstance].BGM play];
-//            [[CintinGlobalData sharedInstance].trackA play];
-//            [[CintinGlobalData sharedInstance].trackC play];
+            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0.1, @0.2, @0.8, @0, @0, @0, @0, @0, @0, @0, @0]];
             break;
         
         default:
             break;
     }
+}
+
+- (void)viewDidDisappear:(BOOL)animated {
+    [_buskerBtn stopGlowing];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -96,18 +112,25 @@
 
 - (IBAction)clickHintClose:(id)sender {
     _hintView.hidden = YES;
+
+}
+
+- (void)changeText {
+    
+    CintinGlobalData.sharedInstance.trackB.volume = 0;
+    [UIView animateWithDuration:1.0f
+                     animations:^{
+                         _leftTextImg.image = [UIImage imageNamed:@"2-1_text2.png"];
+                     }
+                     completion:nil];
     _buskerBtn.userInteractionEnabled = YES;
 
 }
 
-- (IBAction)selectCharacter:(UIButton *)sender {
-    // Create page view controller
-//    characterViewController *characterVC = [self.storyboard instantiateViewControllerWithIdentifier:@"characterViewController"];
-//    characterVC.char_id = sender.tag;
-//    [self addChildViewController:characterVC];
-//    [self.view addSubview:characterVC.view];
+- (void)characterGlow:(UIButton *)btn {
+    [btn startGlowing];
+    _hintView.hidden = NO;
 }
-
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(UIButton *)sender {
     
     // 去人物頁面

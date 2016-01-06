@@ -19,6 +19,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
+    [CintinGlobalData sharedInstance];
     // Do any additional setup after loading the view.
 }
 

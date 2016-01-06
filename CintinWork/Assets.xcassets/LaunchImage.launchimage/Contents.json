@@ -24,7 +24,7 @@
     {
       "orientation" : "landscape",
       "idiom" : "ipad",
-      "filename" : "00_how.png",
+      "filename" : "launch.png",
       "extent" : "full-screen",
       "minimum-system-version" : "7.0",
       "scale" : "2x"
@@ -74,7 +74,7 @@
     {
       "orientation" : "landscape",
       "idiom" : "ipad",
-      "filename" : "00_how-1.png",
+      "filename" : "launch-1.png",
       "extent" : "full-screen",
       "scale" : "2x"
     }

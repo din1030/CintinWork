@@ -23,8 +23,9 @@
 
 - (void)viewDidAppear:(BOOL)animated {
     
+    NSLog(@"RID: %@", self.restorationIdentifier);
+
     if ([self.restorationIdentifier isEqualToString:@"home"]) {
-        
         // 動畫
         NSMutableArray *animationImg = [NSMutableArray arrayWithObjects:
                                         [UIImage imageNamed:@"cover_1.jpg"],
@@ -35,15 +36,24 @@
         [self.bgAnimation setAnimationDuration: 1.0];
         [self.bgAnimation startAnimating];
         
-        [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.2f];
-        
-//    } else if ([self.restorationIdentifier isEqualToString:@"howToPlay"]) {
-        
-//        [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.2f];
+        [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0.1f, @0, @0, @0, @0, @0, @0, @0, @0, @0]];
         
     } else if ([self.restorationIdentifier isEqualToString:@"b4Cafe"]) {
         
-        [[CintinGlobalData sharedInstance] playAudio:[CintinGlobalData sharedInstance].trackA setVolume:0.8f];
+        [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0.1f, @0, @0, @0, @0, @0, @0, @0, @0, @0]];
+        
+    } else if ([self.restorationIdentifier isEqualToString:@"homeScene"]) {
+        
+        // 動畫
+        NSMutableArray *animationImg = [NSMutableArray arrayWithObjects:
+                                        [UIImage imageNamed:@"7-1.png"],
+                                        [UIImage imageNamed:@"7-1_2.png"],nil];
+        
+        [self.bgAnimation setAnimationImages: animationImg];
+        [self.bgAnimation setAnimationDuration: 1.0];
+        [self.bgAnimation startAnimating];
+        
+        [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0.2f, @0, @0, @0, @0, @0, @0, @0, @0, @0]];
         
     }
 }

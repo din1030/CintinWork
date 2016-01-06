@@ -24,6 +24,7 @@
 - (id)init {
 	
 	if (self = [super init]) {
+//        NSLog(@"Global Instanse Initailiazed");
         _BGM = [self setPlayer:_BGM pathForResource:@"openningBGM2" ofType:@"mp3"];
         _trackA = [self setPlayer:_trackA pathForResource:@"A" ofType:@"mp3"];
         _trackB = [self setPlayer:_trackB pathForResource:@"B" ofType:@"mp3"];
@@ -46,13 +47,41 @@
     NSString *path = [[NSBundle mainBundle] pathForResource:name ofType:ext];
     player = [[AVAudioPlayer alloc] initWithContentsOfURL:[NSURL fileURLWithPath:path] error:NULL];
     player.numberOfLoops = -1;
-    player.delegate = self;
+//    player.delegate = self;
     [player prepareToPlay];
     return player;
 }
 
-- (void)playAudio:(AVAudioPlayer *)player setVolume:(float)volume {
-    [player setVolume:volume];
+- (void)playTrackswithVolumes:(NSArray<NSNumber *> *)volumes{
+    
+//    if ([tracks count] != [volumes count]) {
+//        return;
+//    }
+    NSArray<AVAudioPlayer *> *allTracks = @[_BGM, _trackA, _trackB, _trackC, _trackD, _trackE, _trackF, _trackG, _trackH, _trackI, _trackJ];
+//    for (AVAudioPlayer *player in allTracks) {
+//        if (![tracks containsObject:player]) {
+//            [player setVolume:0];
+//        }
+//    }
+    for (int i = 0; i < [allTracks count]; i++) {
+        NSLog(@"Set %@ Vol = %f, Time = %f", [allTracks[i].url.absoluteString substringWithRange:NSMakeRange(allTracks[i].url.absoluteString.length-5, 4)], volumes[i].floatValue, allTracks[i].currentTime);
+        [allTracks[i] setVolume:volumes[i].floatValue];
+        if (!allTracks[i].isPlaying) {
+            [allTracks[i] play];
+        }
+    
+    }
+
+}
+
+//- (void)firstPlayTracks {
+////    NSArray *allTracks = @[_BGM, _trackA, _trackB, _trackC, _trackD, _trackE, _trackF, _trackG, _trackH, _trackI, _trackJ];
+//    NSArray *volumes = @[@0, @0.2f, @0, @0, @0, @0, @0, @0, @0, @0, @0];
+//    [self playTrackswithVolumes:volumes];
+//}
+
+- (void)playAudio:(AVAudioPlayer *)player setVolume:(NSNumber *)volume {
+    [player setVolume:volume.floatValue];
     [player play];
 }
 

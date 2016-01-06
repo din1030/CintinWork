@@ -30,22 +30,11 @@
     _AnimationImg = @[[UIImage imageNamed:@"1-1.png"], [UIImage imageNamed:@"1-2.png"], [UIImage imageNamed:@"1-3.png"],
                       [UIImage imageNamed:@"1-4_start.png"],[UIImage imageNamed:@"b1-1.png"], [UIImage imageNamed:@"b1-2.png"],
                       [UIImage imageNamed:@"b1-3.png"], [UIImage imageNamed:@"b1-4_start.png"]];
-    [CintinGlobalData sharedInstance];
 }
 
 - (void)viewDidAppear:(BOOL)animated {
     
-    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.BGM setVolume:1.0f];
-    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackA setVolume:0.2f];
-    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackB setVolume:0.0f];
-    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackC setVolume:0.0f];
-    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackD setVolume:0.0f];
-    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackE setVolume:0.0f];
-    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackF setVolume:0.0f];
-    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackG setVolume:0.0f];
-    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackH setVolume:0.0f];
-    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackI setVolume:0.0f];
-    [CintinGlobalData.sharedInstance playAudio:CintinGlobalData.sharedInstance.trackJ setVolume:0.0f];
+    [CintinGlobalData.sharedInstance playTrackswithVolumes:@[@1.0, @0.1, @0, @0, @0, @0, @0, @0, @0, @0, @0]];
     
 }
 

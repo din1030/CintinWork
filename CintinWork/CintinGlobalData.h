@@ -32,7 +32,8 @@ typedef NS_ENUM(NSUInteger, ParkSceneState) {
 @property ParkSceneState parkSceneState;
 
 + (CintinGlobalData *)sharedInstance;
-- (void)playAudio:(AVAudioPlayer *)player setVolume:(float)volume;
+- (void)playAudio:(AVAudioPlayer *)player setVolume:(NSNumber *)volume;
+- (void)playTrackswithVolumes:(NSArray<NSNumber *> *)volumes;
 - (void)stopAudio:(AVAudioPlayer *)player;
 - (void)pauseAudio:(AVAudioPlayer *)player;
 
