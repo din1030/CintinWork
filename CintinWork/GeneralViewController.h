@@ -9,7 +9,12 @@
 #import <UIKit/UIKit.h>
 #import "CintinGlobalData.h"
 
-
 @interface GeneralViewController : UIViewController
+
+@property NSNumber *prevCharID;
+@property (strong, nonatomic) IBOutlet UIView *hintView;
+@property (strong, nonatomic) IBOutlet UILabel *hintString;
+- (IBAction)clickHintClose:(id)sender;
+- (IBAction)clickHintBtn:(id)sender;
 
 @end

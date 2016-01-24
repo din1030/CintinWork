@@ -20,9 +20,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
-    
-    [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0.6, @0.8, @1, @0, @0, @0, @0, @0, @0, @0]];
-  
+    [super viewDidAppear:animated];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -34,7 +32,7 @@
     
     // 去人物頁面
     if ([segue.identifier isEqualToString:@"toCharVC"]) {
-        [[segue destinationViewController] setValue:@(sender.tag) forKey:@"char_id"];
+        [[segue destinationViewController] setValue:@(sender.tag) forKey:@"charID"];
     }
 }
 

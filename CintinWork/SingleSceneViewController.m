@@ -7,10 +7,13 @@
 //
 
 #import "SingleSceneViewController.h"
+#import "UIView+Glow.h"
 
 @interface SingleSceneViewController ()
 
 @property (strong, nonatomic) IBOutlet UIImageView *bgAnimation;
+@property (strong, nonatomic) IBOutlet UIButton *roomRecord;
+@property (strong, nonatomic) IBOutlet UIButton *apt;
 
 @end
 
@@ -22,6 +25,7 @@
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    [super viewDidAppear:animated];
     
     NSLog(@"RID: %@", self.restorationIdentifier);
 
@@ -36,25 +40,47 @@
         [self.bgAnimation setAnimationDuration: 1.0];
         [self.bgAnimation startAnimating];
         
+        [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0.1, @0, @0, @0, @0, @0, @0, @0, @0, @0]];
+        
+    } else if ([self.restorationIdentifier isEqualToString:@"intro"]) {
+        
         [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0.1f, @0, @0, @0, @0, @0, @0, @0, @0, @0]];
         
     } else if ([self.restorationIdentifier isEqualToString:@"b4Cafe"]) {
         
-        [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0.1f, @0, @0, @0, @0, @0, @0, @0, @0, @0]];
+//        [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0.1f, @0, @0, @0, @0, @0, @0, @0, @0, @0]];
         
     } else if ([self.restorationIdentifier isEqualToString:@"homeScene"]) {
         
         // 動畫
-        NSMutableArray *animationImg = [NSMutableArray arrayWithObjects:
-                                        [UIImage imageNamed:@"7-1.png"],
-                                        [UIImage imageNamed:@"7-1_2.png"],nil];
+        self.bgAnimation.image = [UIImage animatedImageNamed:@"7-1_" duration:1.0];
         
-        [self.bgAnimation setAnimationImages: animationImg];
-        [self.bgAnimation setAnimationDuration: 1.0];
-        [self.bgAnimation startAnimating];
+        [UIView animateWithDuration:1.5f
+                              delay:0
+                            options:UIViewAnimationOptionRepeat|UIViewAnimationOptionAutoreverse|UIViewAnimationOptionAllowUserInteraction
+                         animations:^{ _apt.alpha = 0.6f;}
+                         completion:nil];
         
-        [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0.2f, @0, @0, @0, @0, @0, @0, @0, @0, @0]];
+    } else if ([self.restorationIdentifier isEqualToString:@"room"]) {
         
+        for (AVAudioPlayer *player in CintinGlobalData.sharedInstance.playerList) {
+            [self doVolumeFadeForPlayer:player];
+        }
+        
+        [UIView animateWithDuration:1.5f
+                              delay:0
+                            options:UIViewAnimationOptionRepeat|UIViewAnimationOptionAutoreverse|UIViewAnimationOptionAllowUserInteraction
+                         animations:^{ _roomRecord.alpha = 0.6f;}
+                         completion:nil];
+        
+    }
+
+}
+
+- (void)doVolumeFadeForPlayer:(AVAudioPlayer *)player {
+    if ([player isPlaying] && player.volume > 0.1f) {
+        player.volume -= 0.025f;
+        [self performSelector:@selector(doVolumeFadeForPlayer:) withObject:player afterDelay:0.25f];
     }
 }
 
@@ -63,14 +89,14 @@
     // Dispose of any resources that can be recreated.
 }
 
-/*
+
 #pragma mark - Navigation
 
-// In a storyboard-based application, you will often want to do a little preparation before navigation
 - (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
+    if ([self.restorationIdentifier isEqualToString:@"b4Cafe"] || [self.restorationIdentifier isEqualToString:@"homeScene"]) {
+        [[segue destinationViewController] setValue:self.prevCharID forKey:@"prevCharID"];
+    }
 }
-*/
+
 
 @end

@@ -29,7 +29,10 @@ typedef NS_ENUM(NSUInteger, ParkSceneState) {
 @property AVAudioPlayer *trackH;
 @property AVAudioPlayer *trackI;
 @property AVAudioPlayer *trackJ;
+@property NSArray *playerList;
+@property AVAudioPlayer *clickSound;
 @property ParkSceneState parkSceneState;
+@property NSNumber *lastCharID;
 
 + (CintinGlobalData *)sharedInstance;
 - (void)playAudio:(AVAudioPlayer *)player setVolume:(NSNumber *)volume;

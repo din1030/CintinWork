@@ -14,6 +14,9 @@
 @property (strong, nonatomic) IBOutlet UIImageView *OLImg;
 @property (strong, nonatomic) IBOutlet UIButton *back;
 @property (strong, nonatomic) IBOutlet UIButton *next;
+@property (strong, nonatomic) IBOutlet UIImageView *smoke1;
+@property (strong, nonatomic) IBOutlet UIImageView *smoke2;
+@property (strong, nonatomic) IBOutlet UIImageView *smoke3;
 
 @end
 
@@ -24,10 +27,38 @@
     
     _back.hidden = YES;
     _next.hidden = YES;
-    _OLImg.alpha = 0.0f;
+    _OLImg.alpha = 0;
+    
+    [UIView animateWithDuration:7.0
+                          delay:0
+                        options:UIViewAnimationCurveEaseInOut|UIViewAnimationOptionAutoreverse|UIViewAnimationOptionRepeat
+                     animations:^{
+                         _smoke1.frame = (CGRect){-161, -91, _smoke1.frame.size.width, _smoke1.frame.size.height};
+                     }
+                     completion:nil];
+    
+    [UIView animateWithDuration:4.5
+                          delay:0.5
+                        options:UIViewAnimationCurveEaseInOut|UIViewAnimationOptionAutoreverse|UIViewAnimationOptionRepeat
+                     animations:^{
+                         _smoke2.frame = (CGRect){505, -147, _smoke2.frame.size.width, _smoke2.frame.size.height};
+                     }
+                     completion:nil];
+    
+    [UIView animateWithDuration:5.0
+                          delay:1.0
+                        options:UIViewAnimationCurveEaseInOut|UIViewAnimationOptionAutoreverse|UIViewAnimationOptionRepeat
+                     animations:^{
+                         _smoke3.frame = (CGRect){540, 116, _smoke3.frame.size.width, _smoke3.frame.size.height};
+                     }
+                     completion:nil];
+    
 }
 
 - (void)viewDidAppear:(BOOL)animated {
+    
+    // when back to 1-5, reset parkSceneState
+    [CintinGlobalData sharedInstance].parkSceneState = initialState;
     
     [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@1.0, @0.05, @0.3, @0, @0, @0, @0, @0, @0, @0, @0]];
     [self doVolumeFade];
@@ -54,7 +85,7 @@
                                         completion:^(BOOL finished){
                                             _back.hidden = NO;
                                             _next.hidden = NO;
-                                        
+
                                         }];
                         
                     }];
@@ -65,21 +96,11 @@
     // Dispose of any resources that can be recreated.
 }
 
--(void)doVolumeFade {
+- (void)doVolumeFade {
     if ([CintinGlobalData.sharedInstance.BGM isPlaying] && CintinGlobalData.sharedInstance.BGM.volume > 0.1f) {
         CintinGlobalData.sharedInstance.BGM.volume -= 0.025f;
         [self performSelector:@selector(doVolumeFade) withObject:nil afterDelay:0.25f];
     }
 }
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

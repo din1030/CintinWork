@@ -15,7 +15,7 @@
             <BuildableReference
                BuildableIdentifier = "primary"
                BlueprintIdentifier = "A6CC8EA21C24008200D9E9B1"
-               BuildableName = "&#x97f3;&#x6a02;&#x7e6a;&#x672c;&#xff1a;&#x5fc3;&#x5f26;&#x4e4b;&#x6b4c;.app"
+               BuildableName = "&#x5fc3;&#x5f26;&#x4e4b;&#x6b4c;.app"
                BlueprintName = "CintinWork"
                ReferencedContainer = "container:CintinWork.xcodeproj">
             </BuildableReference>
@@ -33,7 +33,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A6CC8EA21C24008200D9E9B1"
-            BuildableName = "&#x97f3;&#x6a02;&#x7e6a;&#x672c;&#xff1a;&#x5fc3;&#x5f26;&#x4e4b;&#x6b4c;.app"
+            BuildableName = "&#x5fc3;&#x5f26;&#x4e4b;&#x6b4c;.app"
             BlueprintName = "CintinWork"
             ReferencedContainer = "container:CintinWork.xcodeproj">
          </BuildableReference>
@@ -56,7 +56,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A6CC8EA21C24008200D9E9B1"
-            BuildableName = "&#x97f3;&#x6a02;&#x7e6a;&#x672c;&#xff1a;&#x5fc3;&#x5f26;&#x4e4b;&#x6b4c;.app"
+            BuildableName = "&#x5fc3;&#x5f26;&#x4e4b;&#x6b4c;.app"
             BlueprintName = "CintinWork"
             ReferencedContainer = "container:CintinWork.xcodeproj">
          </BuildableReference>
@@ -75,7 +75,7 @@
          <BuildableReference
             BuildableIdentifier = "primary"
             BlueprintIdentifier = "A6CC8EA21C24008200D9E9B1"
-            BuildableName = "&#x97f3;&#x6a02;&#x7e6a;&#x672c;&#xff1a;&#x5fc3;&#x5f26;&#x4e4b;&#x6b4c;.app"
+            BuildableName = "&#x5fc3;&#x5f26;&#x4e4b;&#x6b4c;.app"
             BlueprintName = "CintinWork"
             ReferencedContainer = "container:CintinWork.xcodeproj">
          </BuildableReference>

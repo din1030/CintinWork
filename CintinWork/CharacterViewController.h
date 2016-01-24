@@ -10,6 +10,6 @@
 
 @interface CharacterViewController : GeneralViewController
 
-@property NSNumber *char_id;
+@property NSNumber *charID;
 
 @end

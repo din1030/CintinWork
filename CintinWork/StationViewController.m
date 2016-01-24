@@ -9,6 +9,7 @@
 #import "StationViewController.h"
 
 @interface StationViewController ()
+
 @property (strong, nonatomic) IBOutlet UIImageView *bgAnimation;
 @property (strong, nonatomic) IBOutlet UIButton *OLBtn;
 
@@ -53,7 +54,7 @@
     
     // 去人物頁面
     if ([segue.identifier isEqualToString:@"toCharVC"]) {
-        [[segue destinationViewController] setValue:@(sender.tag) forKey:@"char_id"];
+        [[segue destinationViewController] setValue:@(sender.tag) forKey:@"charID"];
     }
 }
 

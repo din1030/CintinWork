@@ -36,7 +36,10 @@
         _trackH = [self setPlayer:_trackH pathForResource:@"H" ofType:@"mp3"];
         _trackI = [self setPlayer:_trackI pathForResource:@"I" ofType:@"mp3"];
         _trackJ = [self setPlayer:_trackJ pathForResource:@"J" ofType:@"mp3"];
+        _clickSound = [self setPlayer:_clickSound pathForResource:@"dong" ofType:@"mp3"];
         _parkSceneState = initialState;
+        _lastCharID = 0;
+        _playerList = @[_BGM, _trackA, _trackC, _trackD, _trackE, _trackF, _trackG, _trackH, _trackI, _trackJ];
     }
 	
 	return self;
