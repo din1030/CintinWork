@@ -17,7 +17,7 @@
                         <autoresizingMask key="autoresizingMask"/>
                     </navigationBar>
                     <connections>
-                        <segue destination="6Tg-au-zky" kind="relationship" relationship="rootViewController" id="WcI-me-co9"/>
+                        <segue destination="hj9-GR-D0y" kind="relationship" relationship="rootViewController" id="WHn-vb-9bP"/>
                     </connections>
                 </navigationController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="QCZ-fz-J54" userLabel="First Responder" sceneMemberID="firstResponder"/>
@@ -68,7 +68,6 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="imageView" destination="H0H-Pq-rqQ" id="c1M-tY-nji"/>
-                        <segue destination="6Tg-au-zky" kind="push" identifier="to_1_5" id="7As-gR-Jhs"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -402,20 +401,13 @@
                                             <action selector="clickHintClose:" destination="PhY-3y-1QW" eventType="touchUpInside" id="B9s-o1-HsG"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wzY-4G-KXE">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="wzY-4G-KXE">
                                         <rect key="frame" x="8" y="69" width="285" height="61"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">看看小朋友賣的餅乾
-或外國女孩有什麼事？</string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="19" name="STHeitiTC-Light"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <string key="text">和賣餅乾小朋友
+或是外國女孩攀談</string>
+                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="19"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -504,20 +496,13 @@
                                             <action selector="clickHintClose:" destination="7KP-Ou-6OF" eventType="touchUpInside" id="f6a-qN-9A9"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yld-CA-fln">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="yld-CA-fln">
                                         <rect key="frame" x="23" y="62" width="255" height="73"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">和咖啡店老闆或旁
-邊的客人聊聊吧！</string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="19" name="STHeitiTC-Light"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <string key="text">和咖啡店老闆或正在
+打電腦的客人聊聊吧</string>
+                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="19"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -734,21 +719,13 @@
                                             <action selector="clickHintClose:" destination="A9Y-A5-nI8" eventType="touchUpInside" id="cyJ-Gp-TaP"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8zR-3Z-2oD">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="8zR-3Z-2oD">
                                         <rect key="frame" x="21" y="61" width="258" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">和滑板少年或花店
-的老爺爺互動吧！
-</string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="19" name="STHeitiTC-Light"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <string key="text">和滑板少年攀談或是
+幫幫花店的老爺爺</string>
+                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="19"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -969,8 +946,8 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="RwN-2r-yMK">
                                         <rect key="frame" x="54" y="69" width="193" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">和高中生或滷味
-攤阿姨互動吧！</string>
+                                        <string key="text">看看正在聊天的高中生
+或是到滷味攤買宵夜</string>
                                         <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="19"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1123,20 +1100,13 @@
                                             <action selector="clickHintClose:" destination="f9Z-X3-Bg6" eventType="touchUpInside" id="9WT-TX-5Bo"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ali-J0-U0N">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="clip" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="ali-J0-U0N">
                                         <rect key="frame" x="23" y="63" width="255" height="73"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">和咖啡店老闆或旁
-邊的客人聊聊吧！</string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="19" name="STHeitiTC-Light"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <string key="text">和咖啡店老闆或正在
+打電腦的客人聊聊吧</string>
+                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="19"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -1582,21 +1552,13 @@
                                             <action selector="clickHintClose:" destination="7Lt-Gh-EQu" eventType="touchUpInside" id="rA4-uq-NEl"/>
                                         </connections>
                                     </button>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" usesAttributedText="YES" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lpl-n6-oNi">
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="lpl-n6-oNi">
                                         <rect key="frame" x="21" y="61" width="258" height="75"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <attributedString key="attributedText">
-                                            <fragment>
-                                                <string key="content">和滑板少年或花店
-的老爺爺互動吧！
-</string>
-                                                <attributes>
-                                                    <color key="NSColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
-                                                    <font key="NSFont" size="19" name="STHeitiTC-Light"/>
-                                                    <paragraphStyle key="NSParagraphStyle" alignment="center" lineBreakMode="wordWrapping" baseWritingDirection="natural" lineSpacing="6"/>
-                                                </attributes>
-                                            </fragment>
-                                        </attributedString>
+                                        <string key="text">和滑板少年攀談或是
+幫幫花店的老爺爺</string>
+                                        <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="19"/>
+                                        <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
                                     </label>
                                 </subviews>
@@ -1720,8 +1682,8 @@
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="characterWrap" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="4MW-9C-V3h">
                                         <rect key="frame" x="54" y="69" width="193" height="60"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                        <string key="text">和高中生或滷味
-攤阿姨互動吧！</string>
+                                        <string key="text">看看正在聊天的高中生
+或是到滷味攤買宵夜</string>
                                         <fontDescription key="fontDescription" name="STHeitiTC-Light" family="Heiti TC" pointSize="19"/>
                                         <color key="textColor" red="0.0" green="0.0" blue="0.0" alpha="1" colorSpace="calibratedRGB"/>
                                         <nil key="highlightedColor"/>
@@ -1838,7 +1800,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="next.png"/>
                                 <connections>
-                                    <segue destination="BYZ-38-t0r" kind="push" id="hu8-f0-kDp"/>
+                                    <segue destination="6Tg-au-zky" kind="push" id="A6S-To-ILr"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tUH-eU-Z2V">
@@ -1931,14 +1893,13 @@
         <image name="window.png" width="300" height="175"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="WcI-me-co9"/>
-        <segue reference="2Ey-Gj-zc6"/>
+        <segue reference="q6A-ZH-jBK"/>
         <segue reference="zIT-wy-Fgz"/>
+        <segue reference="2Ey-Gj-zc6"/>
         <segue reference="xV3-8X-sWk"/>
         <segue reference="Bz1-tD-OBj"/>
         <segue reference="FqO-i7-95T"/>
         <segue reference="Kko-RC-LyP"/>
-        <segue reference="q6A-ZH-jBK"/>
         <segue reference="wYT-No-wS2"/>
         <segue reference="YM7-6K-rUB"/>
     </inferredMetricsTieBreakers>

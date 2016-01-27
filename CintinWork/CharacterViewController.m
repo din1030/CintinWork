@@ -112,17 +112,17 @@
             break;
             
         case 4:
-            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0, @0, @0, @0.5, @0, @0, @0, @0, @0, @0]];
+            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0, @0, @0, @0.2, @0, @0, @0, @0, @0, @0]];
             break;
             
         case 51:  // 角色 E ~J 有兩個頁面要設定
         case 52:
-            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0, @0, @0, @0, @0.5, @0, @0, @0, @0, @0]];
+            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0, @0, @0, @0, @0.3, @0, @0, @0, @0, @0]];
             break;
             
         case 61:
         case 62:
-            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0, @0, @0, @0, @0, @0.4, @0, @0, @0, @0]];
+            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0, @0, @0, @0, @0, @0.2, @0, @0, @0, @0]];
             break;
             
         case 71:
@@ -132,19 +132,20 @@
             
         case 81:
         case 82:
-            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0, @0, @0, @0, @0, @0, @0, @0.5, @0, @0]];
+            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0, @0, @0, @0, @0, @0, @0, @0.4, @0, @0]];
             break;
             
         case 91:
         case 92:
-            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0, @0, @0, @0, @0, @0, @0, @0, @0.4, @0]];
+            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0, @0, @0, @0, @0, @0, @0, @0, @0.3, @0]];
             
             break;
             
         case 101:
         case 102:
-            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0.4]];
+            [[CintinGlobalData sharedInstance] playTrackswithVolumes:@[@0, @0, @0, @0, @0, @0, @0, @0, @0, @0, @0.3]];
             break;
+
             
         default:
             break;

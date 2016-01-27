@@ -1055,7 +1055,7 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
-				PRODUCT_NAME = "心弦之歌";
+				PRODUCT_NAME = "心弦之歌2";
 				SDKROOT = iphoneos;
 			};
 			name = Debug;
@@ -1092,7 +1092,7 @@
 				GCC_WARN_UNUSED_VARIABLE = YES;
 				IPHONEOS_DEPLOYMENT_TARGET = 9.2;
 				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "心弦之歌";
+				PRODUCT_NAME = "心弦之歌2";
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};
@@ -1106,7 +1106,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CintinWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ChengChiaTing.CintinWork;
+				PRODUCT_BUNDLE_IDENTIFIER = ChengChiaTing.CintinWork2;
 				PRODUCT_NAME = "心弦之歌";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -1120,7 +1120,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CintinWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ChengChiaTing.CintinWork;
+				PRODUCT_BUNDLE_IDENTIFIER = ChengChiaTing.CintinWork2;
 				PRODUCT_NAME = "心弦之歌";
 				TARGETED_DEVICE_FAMILY = 2;
 			};

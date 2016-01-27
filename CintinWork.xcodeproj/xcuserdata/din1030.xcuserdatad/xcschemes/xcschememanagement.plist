@@ -9,10 +9,20 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>心弦之歌2.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
 		<key>A6CC8EA21C24008200D9E9B1</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>A6DCC07F1C575AB400B75041</key>
 		<dict>
 			<key>primary</key>
 			<true/>
