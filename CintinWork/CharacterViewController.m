@@ -15,6 +15,7 @@
 @property (strong, nonatomic) IBOutlet UIImageView *hintNote;
 @property (strong, nonatomic) IBOutlet UIImageView *charAnimation;
 @property (strong, nonatomic) IBOutlet UIImageView *addedImage;
+@property (strong, nonatomic) IBOutlet UIButton *nextBtn;
 
 @property NSString *segueToNextScene;
 @property BOOL addedTrack;
@@ -162,6 +163,8 @@
     if (_addedTrack) {
         _addedImage.hidden = YES;
         _addedTrack = NO;
+        [_nextBtn setBackgroundImage:[UIImage imageNamed:@"next_wide.png"] forState:UIControlStateNormal];
+        _nextBtn.frame = (CGRect){916, 692, 80, 50};
     } else {
         [self.navigationController popViewControllerAnimated:YES];
     }
@@ -171,6 +174,8 @@
 - (IBAction)next:(UIButton *)sender {
     int id = [_charID intValue];
     if (id != 1 && id != 2 && !_addedTrack) {
+        [_nextBtn setBackgroundImage:[UIImage imageNamed:@"next.png"] forState:UIControlStateNormal];
+        _nextBtn.frame = (CGRect){946, 692, 50, 50};
         // 疊上主角圖跟音軌
         switch (id) {
             case 3: { //cafe，場景編號 3

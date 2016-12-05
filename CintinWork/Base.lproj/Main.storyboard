@@ -68,6 +68,7 @@
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
                         <outlet property="imageView" destination="H0H-Pq-rqQ" id="c1M-tY-nji"/>
+                        <segue destination="6Tg-au-zky" kind="push" identifier="to_1_5" id="lDG-fP-XSc"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
@@ -132,6 +133,7 @@
                         <outlet property="charAnimation" destination="K2V-t6-IuH" id="15I-lg-fDz"/>
                         <outlet property="charBG" destination="gXL-nZ-vVc" id="ked-4j-aPs"/>
                         <outlet property="hintNote" destination="oKq-Ak-1U4" id="tQa-hM-qcZ"/>
+                        <outlet property="nextBtn" destination="r2a-tS-96e" id="CLz-D7-APi"/>
                         <segue destination="A9Y-A5-nI8" kind="push" identifier="toFlowerShop" id="Xvf-Nh-d6O"/>
                         <segue destination="5ml-Y3-UhX" kind="push" identifier="toCafe" id="Ouu-wL-Elx"/>
                     </connections>
@@ -350,7 +352,7 @@
                                 <state key="normal" backgroundImage="3-1_A.png"/>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="C0D-Ob-qRq">
-                                <rect key="frame" x="946" y="694" width="50" height="50"/>
+                                <rect key="frame" x="946" y="692" width="50" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="hint.png"/>
                                 <connections>
@@ -638,6 +640,7 @@
                         <outlet property="charAnimation" destination="vWp-YK-bWY" id="nE0-gG-xRR"/>
                         <outlet property="charBG" destination="KKA-Mw-TTK" id="pMu-q1-Vij"/>
                         <outlet property="hintNote" destination="wJp-n6-bRv" id="mjS-f1-rjV"/>
+                        <outlet property="nextBtn" destination="LlR-dp-SGz" id="aXP-nx-Euc"/>
                         <segue destination="HWG-WS-207" kind="push" identifier="toBushiStreet" id="cJ3-sI-qbK"/>
                         <segue destination="7Lt-Gh-EQu" kind="push" identifier="toFlowerShop" id="nXl-DI-93j"/>
                     </connections>
@@ -802,6 +805,7 @@
                         <outlet property="charAnimation" destination="NYz-Cf-L0S" id="WLb-0d-j0W"/>
                         <outlet property="charBG" destination="Q2Z-h1-z0p" id="yU2-Y3-4C9"/>
                         <outlet property="hintNote" destination="XwZ-PT-qjS" id="ByR-bl-SQi"/>
+                        <outlet property="nextBtn" destination="jkw-I1-xxO" id="AHq-xN-A0c"/>
                         <segue destination="a71-Ha-vmx" kind="push" identifier="toCafe" id="hlk-hm-EZg"/>
                         <segue destination="nIw-AK-bIb" kind="push" identifier="toBushiStreet" id="oLn-Oq-KNc"/>
                     </connections>
@@ -868,6 +872,7 @@
                         <outlet property="charAnimation" destination="zyr-Ae-uTb" id="9cw-C2-K9q"/>
                         <outlet property="charBG" destination="LFJ-PH-D21" id="Fqf-4H-PmD"/>
                         <outlet property="hintNote" destination="FT1-UQ-7Jl" id="ZK5-7D-MlI"/>
+                        <outlet property="nextBtn" destination="4jA-n8-fpG" id="1Iq-5w-WLT"/>
                         <segue destination="uTr-Si-KMw" kind="push" identifier="goHome" id="gEZ-fx-qr3"/>
                     </connections>
                 </viewController>
@@ -984,6 +989,10 @@
                                 <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
+                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3-C_add.png" id="yw9-3W-3f2">
+                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            </imageView>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="D4o-Y9-Dp1">
                                 <rect key="frame" x="914" y="692" width="80" height="50"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
@@ -1012,19 +1021,17 @@
                                 <rect key="frame" x="946" y="634" width="48" height="55"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
-                            <imageView hidden="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="3-C_add.png" id="yw9-3W-3f2">
-                                <rect key="frame" x="0.0" y="0.0" width="1024" height="768"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                            </imageView>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
                     </view>
                     <navigationItem key="navigationItem" id="d6M-rF-omi"/>
                     <simulatedOrientationMetrics key="simulatedOrientationMetrics" orientation="landscapeRight"/>
                     <connections>
+                        <outlet property="addedImage" destination="yw9-3W-3f2" id="cKW-IP-4QE"/>
                         <outlet property="charAnimation" destination="TpU-0N-u2L" id="dJq-Do-Nab"/>
                         <outlet property="charBG" destination="BAl-Zc-tVo" id="tiT-Dd-Ug9"/>
                         <outlet property="hintNote" destination="zLB-ii-pO1" id="2Zz-Lr-PaR"/>
+                        <outlet property="nextBtn" destination="D4o-Y9-Dp1" id="x5J-gT-Qp7"/>
                         <segue destination="uTr-Si-KMw" kind="push" identifier="goHome" id="64H-bo-ZUa"/>
                     </connections>
                 </viewController>
@@ -1183,6 +1190,7 @@
                         <outlet property="charAnimation" destination="ybf-gb-N7T" id="o8V-gS-6Be"/>
                         <outlet property="charBG" destination="rAv-Wq-5Fj" id="46c-um-uP2"/>
                         <outlet property="hintNote" destination="4mD-Y9-HrM" id="6Rf-qx-CSH"/>
+                        <outlet property="nextBtn" destination="lFn-Jp-aTW" id="85O-lw-Zig"/>
                         <segue destination="uTr-Si-KMw" kind="push" identifier="goHome" id="FqO-i7-95T"/>
                     </connections>
                 </viewController>
@@ -1345,6 +1353,7 @@
                         <outlet property="charAnimation" destination="HgO-7l-l4g" id="WNO-lC-7jy"/>
                         <outlet property="charBG" destination="sNh-ax-2R2" id="IvZ-uv-BIP"/>
                         <outlet property="hintNote" destination="nRi-CE-QYq" id="2bp-DC-sdj"/>
+                        <outlet property="nextBtn" destination="4jb-Bf-gKu" id="0ol-j5-imz"/>
                         <segue destination="uTr-Si-KMw" kind="push" identifier="goHome" id="zgN-Wp-goy"/>
                     </connections>
                 </viewController>
@@ -1800,7 +1809,7 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" backgroundImage="next.png"/>
                                 <connections>
-                                    <segue destination="6Tg-au-zky" kind="push" id="A6S-To-ILr"/>
+                                    <segue destination="BYZ-38-t0r" kind="push" id="egR-ai-GEa"/>
                                 </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="tUH-eU-Z2V">
@@ -1893,14 +1902,14 @@
         <image name="window.png" width="300" height="175"/>
     </resources>
     <inferredMetricsTieBreakers>
-        <segue reference="q6A-ZH-jBK"/>
+        <segue reference="xV3-8X-sWk"/>
         <segue reference="zIT-wy-Fgz"/>
         <segue reference="2Ey-Gj-zc6"/>
-        <segue reference="xV3-8X-sWk"/>
-        <segue reference="Bz1-tD-OBj"/>
-        <segue reference="FqO-i7-95T"/>
-        <segue reference="Kko-RC-LyP"/>
+        <segue reference="q6A-ZH-jBK"/>
         <segue reference="wYT-No-wS2"/>
+        <segue reference="gEZ-fx-qr3"/>
         <segue reference="YM7-6K-rUB"/>
+        <segue reference="Bz1-tD-OBj"/>
+        <segue reference="Kko-RC-LyP"/>
     </inferredMetricsTieBreakers>
 </document>

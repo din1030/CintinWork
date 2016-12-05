@@ -1106,7 +1106,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CintinWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ChengChiaTing.CintinWork2;
+				PRODUCT_BUNDLE_IDENTIFIER = ChengChiaTing.CintinWork;
 				PRODUCT_NAME = "心弦之歌";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
@@ -1120,7 +1120,7 @@
 				CODE_SIGN_IDENTITY = "iPhone Developer";
 				INFOPLIST_FILE = CintinWork/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
-				PRODUCT_BUNDLE_IDENTIFIER = ChengChiaTing.CintinWork2;
+				PRODUCT_BUNDLE_IDENTIFIER = ChengChiaTing.CintinWork;
 				PRODUCT_NAME = "心弦之歌";
 				TARGETED_DEVICE_FAMILY = 2;
 			};
